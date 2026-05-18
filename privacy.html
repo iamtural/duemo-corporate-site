@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy · DUEMO</title>
+  <meta name="description" content="DUEMO Privacy Policy — how we collect, use, and protect your personal data."/>
+  <link rel="canonical" href="https://duemo.ai/privacy"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --ink:#1A0800; --orange:#F54800; --text:rgba(255,255,255,.85); --muted:rgba(255,255,255,.4); --border:rgba(255,255,255,.08); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--ink); color: var(--text); font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.7; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* NAV */
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(26,8,0,.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 14px 52px; }
+    .nav-logo { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -.3px; }
+    .nav-logo span { color: var(--orange); }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { font-size: 13px; color: var(--muted); transition: color .2s; }
+    .nav-links a:hover { color: #fff; text-decoration: none; }
+    .lang-btns { display: flex; gap: 6px; }
+    .lang-btn { background: rgba(255,255,255,.08); border: none; color: var(--muted); font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 4px; cursor: pointer; transition: all .2s; font-family: inherit; }
+    .lang-btn.on { background: var(--orange); color: #fff; }
+
+    /* CONTENT */
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+    .page-chip { display: inline-block; background: rgba(245,72,0,.15); color: var(--orange); font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 20px; }
+    h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 700; line-height: 1.15; letter-spacing: -.5px; margin-bottom: 12px; }
+    .updated { font-size: 13px; color: var(--muted); margin-bottom: 40px; }
+    h2 { font-size: 18px; font-weight: 600; color: #fff; margin: 36px 0 10px; border-left: 3px solid var(--orange); padding-left: 14px; }
+    p { color: var(--text); margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; color: var(--text); }
+    .highlight { background: rgba(245,72,0,.1); border: 1px solid rgba(245,72,0,.2); border-radius: 8px; padding: 14px 16px; margin: 16px 0; }
+    .highlight p { margin: 0; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); font-size: 14px; }
+    th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+    td { color: var(--text); }
+    .contact-box { background: rgba(255,255,255,.04); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 40px; }
+    .contact-box p { margin-bottom: 6px; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--border); padding: 24px 52px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .foot-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .foot-legal a { font-size: 12px; color: var(--muted); transition: color .2s; }
+    .foot-legal a:hover { color: #fff; }
+    .foot-copy { font-size: 12px; color: rgba(255,255,255,.22); }
+
+    [data-lang] { display: none; }
+    [data-lang].on { display: block; }
+
+    @media(max-width:640px){
+      nav { padding: 12px 20px; }
+      .nav-links { display: none; }
+      footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">DUE<span>MO</span></a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/terms">Terms</a>
+    <a href="/delete-account">Delete Account</a>
+    <a href="/support">Support</a>
+  </div>
+  <div class="lang-btns">
+    <button class="lang-btn on" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('az')">AZ</button>
+    <button class="lang-btn" onclick="setLang('ru')">RU</button>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- ENGLISH -->
+  <div data-lang="en" class="on">
+    <span class="page-chip">Legal</span>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026 · Effective: October 2025</p>
+
+    <p>This Privacy Policy explains how <strong>"DUEMO" MMC</strong> ("DUEMO", "we", "us") collects, uses, and protects your personal information when you use our mobile application and website.</p>
+
+    <h2>1. Data We Collect</h2>
+    <p>We collect only the information necessary to provide our service:</p>
+    <ul>
+      <li>Name and contact details (email, phone number)</li>
+      <li>Delivery address</li>
+      <li>Order history and preferences</li>
+      <li>Device information and app usage data</li>
+    </ul>
+    <p>We do not collect unnecessary personal data.</p>
+
+    <h2>2. Payment &amp; Card Data</h2>
+    <div class="highlight">
+      <p>🔐 <strong>DUEMO does not store bank card details on its servers.</strong> All payment transactions are processed through certified payment processors using TLS 1.2 encryption. Card data is transmitted securely and never retained by DUEMO.</p>
+    </div>
+
+    <h2>3. Security Protocol</h2>
+    <p>Our platform uses <strong>TLS 1.2</strong> encryption for all data transmitted between users and our servers. The platform operates on a static IP address.</p>
+
+    <h2>4. How We Use Your Data</h2>
+    <p>Your data is used exclusively for:</p>
+    <ul>
+      <li>Processing and delivering your orders</li>
+      <li>Managing your account</li>
+      <li>Improving the platform and user experience</li>
+      <li>Legal compliance and fraud prevention</li>
+      <li>Sending order updates and service notifications</li>
+    </ul>
+    <p>We <strong>do not</strong> sell your personal data to third parties.</p>
+
+    <h2>5. Data Retention</h2>
+    <table>
+      <tr><th>Data type</th><th>Retention period</th><th>Reason</th></tr>
+      <tr><td>Personal profile data</td><td>Until account deletion</td><td>Service delivery</td></tr>
+      <tr><td>Financial transaction records</td><td>7 years</td><td>Azerbaijan Tax Code Art. 72</td></tr>
+      <tr><td>Anonymized order statistics</td><td>Up to 3 years</td><td>Service improvement</td></tr>
+    </table>
+
+    <h2>6. Third-Party Services</h2>
+    <p>We may use trusted third-party services for payment processing, analytics, and infrastructure. These providers are contractually bound to protect your data and may not use it for their own purposes.</p>
+
+    <h2>7. Cookies</h2>
+    <p>Our website uses essential cookies for functionality and session management. We do not use advertising or tracking cookies without consent.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Our service is not directed at children under 13 years of age. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, contact us immediately.</p>
+
+    <h2>9. Your Rights</h2>
+    <p>Under applicable law, you have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your data</li>
+      <li>Object to or restrict certain processing</li>
+      <li>Data portability</li>
+    </ul>
+    <p>To exercise these rights, contact us at <a href="mailto:privacy@duemo.az">privacy@duemo.az</a> or request account deletion at <a href="/delete-account">duemo.ai/delete-account</a>.</p>
+
+    <h2>10. Data Controller</h2>
+    <p>The data controller responsible for your personal data is:</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Material changes will be communicated via the app or email. Continued use of our service after changes constitutes acceptance.</p>
+
+    <h2>12. Governing Law</h2>
+    <p>This Privacy Policy is governed by the laws of the Republic of Azerbaijan. Disputes shall be resolved in the courts of Baku.</p>
+
+    <div class="contact-box">
+      <p><strong>Data Controller</strong></p>
+      <p>"DUEMO" MMC · VÖEN: 1407425651</p>
+      <p>AZ1014, Baku, Nasimi District, Bulbul Avenue, Building 30, Apt. 5</p>
+      <p>📧 <a href="mailto:privacy@duemo.az">privacy@duemo.az</a> · <a href="mailto:hello@duemo.ai">hello@duemo.ai</a></p>
+      <p>📞 <a href="tel:+994124938277">+994 (12) 493-82-77</a></p>
+    </div>
+  </div>
+
+  <!-- AZERBAIJANI -->
+  <div data-lang="az">
+    <span class="page-chip">Hüquqi</span>
+    <h1>Məxfilik Siyasəti</h1>
+    <p class="updated">Son yenilənmə: May 2026 · Qüvvəyə minmə: Oktyabr 2025</p>
+
+    <p>Bu Məxfilik Siyasəti, <strong>"DUEMO" MMC</strong> ("DUEMO", "biz") tərəfindən mobil tətbiqimizdən və vebsaytımızdan istifadə zamanı şəxsi məlumatlarınızın necə toplandığını, istifadə edildiyini və qorunduğunu izah edir.</p>
+
+    <h2>1. Topladığımız Məlumatlar</h2>
+    <p>Biz yalnız xidmətimizi göstərmək üçün zəruri olan məlumatları toplayırıq:</p>
+    <ul>
+      <li>Ad və əlaqə məlumatları (e-poçt, telefon nömrəsi)</li>
+      <li>Çatdırılma ünvanı</li>
+      <li>Sifariş tarixi və seçimlər</li>
+      <li>Cihaz məlumatları və tətbiq istifadə məlumatları</li>
+    </ul>
+
+    <h2>2. Ödəniş və Kart Məlumatları</h2>
+    <div class="highlight">
+      <p>🔐 <strong>DUEMO bank kartı məlumatlarını öz serverlərində saxlamır.</strong> Bütün ödəniş əməliyyatları TLS 1.2 şifrələməsindən istifadə edən sertifikatlaşdırılmış ödəniş prosessorları vasitəsilə həyata keçirilir.</p>
+    </div>
+
+    <h2>3. Məlumatlardan İstifadə</h2>
+    <ul>
+      <li>Sifarişlərinizin işlənməsi və çatdırılması</li>
+      <li>Hesab idarəetməsi</li>
+      <li>Platforma və istifadəçi təcrübəsinin təkmilləşdirilməsi</li>
+      <li>Qanuni uyğunluq və dələduzluğun qarşısının alınması</li>
+    </ul>
+    <p>Şəxsi məlumatlarınızı üçüncü tərəflərə <strong>satmırıq</strong>.</p>
+
+    <h2>4. Məlumatların Saxlanması</h2>
+    <table>
+      <tr><th>Məlumat növü</th><th>Saxlama müddəti</th><th>Səbəb</th></tr>
+      <tr><td>Şəxsi profil məlumatları</td><td>Hesabın silinməsinə qədər</td><td>Xidmət göstərilməsi</td></tr>
+      <tr><td>Maliyyə əməliyyatı qeydləri</td><td>7 il</td><td>Azərbaycan Vergi Məcəlləsi, maddə 72</td></tr>
+      <tr><td>Anonimləşdirilmiş sifariş statistikası</td><td>3 ilə qədər</td><td>Xidmətin inkişafı</td></tr>
+    </table>
+
+    <h2>5. Hüquqlarınız</h2>
+    <ul>
+      <li>Şəxsi məlumatlarınıza çıxış</li>
+      <li>Yanlış məlumatların düzəldilməsini tələb etmək</li>
+      <li>Məlumatlarınızın silinməsini tələb etmək</li>
+      <li>Müəyyən emalın qadağan edilməsi və ya məhdudlaşdırılması</li>
+    </ul>
+    <p>Bu hüquqları həyata keçirmək üçün <a href="mailto:privacy@duemo.az">privacy@duemo.az</a> ünvanına müraciət edin.</p>
+
+    <div class="contact-box">
+      <p><strong>Məlumat Nəzarətçisi</strong></p>
+      <p>"DUEMO" MMC · VÖEN: 1407425651</p>
+      <p>AZ1014, Bakı şəhəri, Nəsimi rayonu, Bülbül pr., ev 30, mənzil 5</p>
+      <p>📧 <a href="mailto:privacy@duemo.az">privacy@duemo.az</a></p>
+    </div>
+  </div>
+
+  <!-- RUSSIAN -->
+  <div data-lang="ru">
+    <span class="page-chip">Правовая информация</span>
+    <h1>Политика конфиденциальности</h1>
+    <p class="updated">Последнее обновление: Май 2026 · Вступила в силу: Октябрь 2025</p>
+
+    <p>Настоящая Политика конфиденциальности объясняет, как <strong>"DUEMO" ООО</strong> ("DUEMO", "мы") собирает, использует и защищает ваши персональные данные при использовании нашего мобильного приложения и сайта.</p>
+
+    <h2>1. Данные, которые мы собираем</h2>
+    <ul>
+      <li>Имя и контактные данные (email, телефон)</li>
+      <li>Адрес доставки</li>
+      <li>История заказов и предпочтения</li>
+      <li>Информация об устройстве и использовании приложения</li>
+    </ul>
+
+    <h2>2. Платёжные данные</h2>
+    <div class="highlight">
+      <p>🔐 <strong>DUEMO не хранит данные банковских карт на своих серверах.</strong> Все транзакции обрабатываются сертифицированными платёжными процессорами с шифрованием TLS 1.2.</p>
+    </div>
+
+    <h2>3. Использование данных</h2>
+    <ul>
+      <li>Обработка и доставка ваших заказов</li>
+      <li>Управление аккаунтом</li>
+      <li>Улучшение платформы</li>
+      <li>Соблюдение законодательства и предотвращение мошенничества</li>
+    </ul>
+    <p>Мы <strong>не продаём</strong> ваши персональные данные третьим лицам.</p>
+
+    <h2>4. Хранение данных</h2>
+    <table>
+      <tr><th>Тип данных</th><th>Срок хранения</th><th>Причина</th></tr>
+      <tr><td>Данные профиля</td><td>До удаления аккаунта</td><td>Оказание услуг</td></tr>
+      <tr><td>Финансовые записи</td><td>7 лет</td><td>Налоговый кодекс Азербайджана, ст. 72</td></tr>
+      <tr><td>Анонимизированная статистика</td><td>До 3 лет</td><td>Улучшение сервиса</td></tr>
+    </table>
+
+    <h2>5. Ваши права</h2>
+    <ul>
+      <li>Доступ к персональным данным</li>
+      <li>Исправление неточных данных</li>
+      <li>Удаление данных</li>
+      <li>Ограничение обработки</li>
+    </ul>
+    <p>Для реализации прав обращайтесь: <a href="mailto:privacy@duemo.az">privacy@duemo.az</a>. Удаление аккаунта: <a href="/delete-account">duemo.ai/delete-account</a>.</p>
+
+    <div class="contact-box">
+      <p><strong>Оператор персональных данных</strong></p>
+      <p>"DUEMO" ООО · ИНН: 1407425651</p>
+      <p>AZ1014, г. Баку, Насимский район, пр. Бюльбюль, д. 30, кв. 5</p>
+      <p>📧 <a href="mailto:privacy@duemo.az">privacy@duemo.az</a></p>
+    </div>
+  </div>
+
+</div><!-- page-wrap -->
+
+<footer>
+  <div class="foot-legal">
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/delete-account">Delete Account</a>
+    <a href="/support">Support</a>
+  </div>
+  <p class="foot-copy">© 2026 "DUEMO" MMC · VÖEN: 1407425651</p>
+</footer>
+
+<script>
+let lang = 'en';
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('on', el.dataset.lang === l));
+  document.querySelectorAll('.lang-btn').forEach((b, i) => {
+    const langs = ['en','az','ru'];
+    b.classList.toggle('on', langs[i] === l);
+  });
+  document.documentElement.lang = l;
+  try { localStorage.setItem('dl', l); } catch(e) {}
+}
+try { const s = localStorage.getItem('dl'); if (s && ['en','az','ru'].includes(s)) setLang(s); } catch(e) {}
+</script>
+</body>
+</html>

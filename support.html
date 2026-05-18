@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support · DUEMO</title>
+  <meta name="description" content="DUEMO Support — get help with your orders, account, or technical issues."/>
+  <link rel="canonical" href="https://duemo.ai/support"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --ink:#1A0800; --orange:#F54800; --text:rgba(255,255,255,.85); --muted:rgba(255,255,255,.4); --border:rgba(255,255,255,.08); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--ink); color: var(--text); font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.7; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(26,8,0,.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 14px 52px; }
+    .nav-logo { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -.3px; }
+    .nav-logo span { color: var(--orange); }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { font-size: 13px; color: var(--muted); transition: color .2s; }
+    .nav-links a:hover { color: #fff; text-decoration: none; }
+    .lang-btns { display: flex; gap: 6px; }
+    .lang-btn { background: rgba(255,255,255,.08); border: none; color: var(--muted); font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 4px; cursor: pointer; transition: all .2s; font-family: inherit; }
+    .lang-btn.on { background: var(--orange); color: #fff; }
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+    .page-chip { display: inline-block; background: rgba(245,72,0,.15); color: var(--orange); font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 20px; }
+    h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 700; line-height: 1.15; letter-spacing: -.5px; margin-bottom: 12px; }
+    .subtitle { font-size: 18px; color: var(--muted); margin-bottom: 48px; }
+    h2 { font-size: 18px; font-weight: 600; color: #fff; margin: 36px 0 16px; border-left: 3px solid var(--orange); padding-left: 14px; }
+    p { color: var(--text); margin-bottom: 12px; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 20px 0; }
+    .contact-card { background: rgba(255,255,255,.04); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; }
+    .contact-card .icon { font-size: 24px; margin-bottom: 10px; }
+    .contact-card h3 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+    .contact-card p { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+    .contact-card a { font-size: 14px; font-weight: 500; color: var(--orange); }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .faq-q { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 8px; }
+    .faq-a { font-size: 14px; color: var(--text); }
+    .response-note { background: rgba(255,255,255,.04); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin: 24px 0; font-size: 14px; color: var(--muted); }
+    footer { border-top: 1px solid var(--border); padding: 24px 52px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .foot-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .foot-legal a { font-size: 12px; color: var(--muted); transition: color .2s; }
+    .foot-legal a:hover { color: #fff; }
+    .foot-copy { font-size: 12px; color: rgba(255,255,255,.22); }
+    [data-lang] { display: none; }
+    [data-lang].on { display: block; }
+    @media(max-width:640px){ nav { padding: 12px 20px; } .nav-links { display: none; } .contact-grid { grid-template-columns: 1fr; } footer { padding: 20px 24px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">DUE<span>MO</span></a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/privacy">Privacy</a>
+    <a href="/terms">Terms</a>
+    <a href="/delete-account">Delete Account</a>
+  </div>
+  <div class="lang-btns">
+    <button class="lang-btn on" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('az')">AZ</button>
+    <button class="lang-btn" onclick="setLang('ru')">RU</button>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- ENGLISH -->
+  <div data-lang="en" class="on">
+    <span class="page-chip">Help</span>
+    <h1>Support</h1>
+    <p class="subtitle">We're here to help. Reach out anytime.</p>
+
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon">📧</div>
+        <h3>General Support</h3>
+        <p>Orders, accounts, and general questions</p>
+        <a href="mailto:hello@duemo.ai">hello@duemo.ai</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">🔒</div>
+        <h3>Privacy &amp; Data</h3>
+        <p>Data requests, account deletion, GDPR/personal data</p>
+        <a href="mailto:privacy@duemo.az">privacy@duemo.az</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📞</div>
+        <h3>Phone</h3>
+        <p>Business hours: Mon–Fri, 9am–6pm (Baku time)</p>
+        <a href="tel:+994124938277">+994 (12) 493-82-77</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📍</div>
+        <h3>Headquarters</h3>
+        <p>"DUEMO" MMC · VÖEN: 1407425651</p>
+        <span style="font-size:13px;color:var(--muted)">AZ1014, Baku, Nasimi District,<br/>Bulbul Ave., Building 30, Apt. 5</span>
+      </div>
+    </div>
+
+    <div class="response-note">
+      ⏱️ We typically respond within <strong>24 hours</strong> on business days. For urgent order issues, include your order number in your message.
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <p class="faq-q">How do I cancel an order?</p>
+      <p class="faq-a">You can cancel within 5 minutes of placing your order, before the chef begins preparation. Go to Orders → your order → Cancel. After preparation has started, cancellation is no longer possible.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">My order was wrong or had quality issues — what do I do?</p>
+      <p class="faq-a">Contact us at <a href="mailto:hello@duemo.ai">hello@duemo.ai</a> within 2 hours of receiving your order. Include your order number and a description of the issue. We'll review and process a refund if warranted.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">How do I delete my account?</p>
+      <p class="faq-a">You can delete your account in the app via Profile → Settings → Delete Account, or by emailing <a href="mailto:privacy@duemo.az">privacy@duemo.az</a>. See our <a href="/delete-account">Account Deletion page</a> for full details.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">I have a food allergy — how do I know if a dish is safe?</p>
+      <p class="faq-a">Each dish listing includes an allergen section. You can also contact the chef directly through the app before ordering. DUEMO does not guarantee allergen-free preparation environments.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">How do I request my personal data?</p>
+      <p class="faq-a">Email <a href="mailto:privacy@duemo.az">privacy@duemo.az</a> from your registered email address with the subject "Data Access Request." We will respond within 30 days.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">I want to become a chef on DUEMO — how do I apply?</p>
+      <p class="faq-a">Email <a href="mailto:hello@duemo.ai">hello@duemo.ai</a> with the subject "Chef Application" and tell us about yourself and your cooking. We'll get back to you with the next steps.</p>
+    </div>
+  </div>
+
+  <!-- AZERBAIJANI -->
+  <div data-lang="az">
+    <span class="page-chip">Kömək</span>
+    <h1>Dəstək</h1>
+    <p class="subtitle">Sizə kömək etmək üçün buradayıq. İstənilən vaxt müraciət edin.</p>
+
+    <h2>Bizimlə Əlaqə</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon">📧</div>
+        <h3>Ümumi Dəstək</h3>
+        <p>Sifarişlər, hesablar və ümumi suallar</p>
+        <a href="mailto:hello@duemo.ai">hello@duemo.ai</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">🔒</div>
+        <h3>Məxfilik və Məlumatlar</h3>
+        <p>Məlumat sorğuları, hesabın silinməsi</p>
+        <a href="mailto:privacy@duemo.az">privacy@duemo.az</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📞</div>
+        <h3>Telefon</h3>
+        <p>İş saatları: B.e–Cümə, 9:00–18:00 (Bakı vaxtı)</p>
+        <a href="tel:+994124938277">+994 (12) 493-82-77</a>
+      </div>
+    </div>
+
+    <div class="response-note">
+      ⏱️ İş günlərində <strong>24 saat</strong> ərzində cavab veririk. Təcili sifariş problemləri üçün sifariş nömrənizi qeyd edin.
+    </div>
+
+    <h2>Tez-tez Verilən Suallar</h2>
+    <div class="faq-item">
+      <p class="faq-q">Sifarişi necə ləğv edə bilərəm?</p>
+      <p class="faq-a">Sifarişi vermədən sonra 5 dəqiqə ərzində, aşpaz hazırlamağa başlamazdan əvvəl ləğv edə bilərsiniz. Sifarişlər → sifarişiniz → Ləğv et.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Hesabımı necə silə bilərəm?</p>
+      <p class="faq-a">Tətbiqdə: Profil → Parametrlər → Hesabı Sil. Və ya <a href="mailto:privacy@duemo.az">privacy@duemo.az</a> ünvanına yazın. Ətraflı məlumat üçün: <a href="/delete-account">Hesabın silinməsi səhifəsi</a>.</p>
+    </div>
+  </div>
+
+  <!-- RUSSIAN -->
+  <div data-lang="ru">
+    <span class="page-chip">Помощь</span>
+    <h1>Поддержка</h1>
+    <p class="subtitle">Мы здесь, чтобы помочь. Обращайтесь в любое время.</p>
+
+    <h2>Свяжитесь с нами</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon">📧</div>
+        <h3>Общая поддержка</h3>
+        <p>Заказы, аккаунты и общие вопросы</p>
+        <a href="mailto:hello@duemo.ai">hello@duemo.ai</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">🔒</div>
+        <h3>Конфиденциальность</h3>
+        <p>Запросы данных, удаление аккаунта</p>
+        <a href="mailto:privacy@duemo.az">privacy@duemo.az</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📞</div>
+        <h3>Телефон</h3>
+        <p>Рабочие часы: Пн–Пт, 9:00–18:00 (время Баку)</p>
+        <a href="tel:+994124938277">+994 (12) 493-82-77</a>
+      </div>
+    </div>
+
+    <div class="response-note">
+      ⏱️ Обычно отвечаем в течение <strong>24 часов</strong> в рабочие дни. При срочных вопросах по заказу укажите номер заказа.
+    </div>
+
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <p class="faq-q">Как отменить заказ?</p>
+      <p class="faq-a">Отменить можно в течение 5 минут после оформления, до начала приготовления. Заказы → ваш заказ → Отменить.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Как удалить аккаунт?</p>
+      <p class="faq-a">В приложении: Профиль → Настройки → Удалить аккаунт. Или напишите на <a href="mailto:privacy@duemo.az">privacy@duemo.az</a>. Подробности: <a href="/delete-account">страница удаления аккаунта</a>.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Как запросить свои персональные данные?</p>
+      <p class="faq-a">Отправьте письмо на <a href="mailto:privacy@duemo.az">privacy@duemo.az</a> с темой "Запрос данных" с вашего зарегистрированного адреса. Ответим в течение 30 дней.</p>
+    </div>
+  </div>
+
+</div><!-- page-wrap -->
+
+<footer>
+  <div class="foot-legal">
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/delete-account">Delete Account</a>
+    <a href="/support">Support</a>
+  </div>
+  <p class="foot-copy">© 2026 "DUEMO" MMC · VÖEN: 1407425651</p>
+</footer>
+
+<script>
+let lang = 'en';
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('on', el.dataset.lang === l));
+  document.querySelectorAll('.lang-btn').forEach((b, i) => {
+    const langs = ['en','az','ru'];
+    b.classList.toggle('on', langs[i] === l);
+  });
+  document.documentElement.lang = l;
+  try { localStorage.setItem('dl', l); } catch(e) {}
+}
+try { const s = localStorage.getItem('dl'); if (s && ['en','az','ru'].includes(s)) setLang(s); } catch(e) {}
+</script>
+</body>
+</html>

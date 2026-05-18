@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delete Account · DUEMO</title>
+  <meta name="description" content="How to delete your DUEMO account and request removal of your personal data."/>
+  <link rel="canonical" href="https://duemo.ai/delete-account"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --ink:#1A0800; --orange:#F54800; --text:rgba(255,255,255,.85); --muted:rgba(255,255,255,.4); --border:rgba(255,255,255,.08); }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--ink); color: var(--text); font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.7; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(26,8,0,.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 14px 52px; }
+    .nav-logo { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -.3px; }
+    .nav-logo span { color: var(--orange); }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { font-size: 13px; color: var(--muted); transition: color .2s; }
+    .nav-links a:hover { color: #fff; text-decoration: none; }
+    .lang-btns { display: flex; gap: 6px; }
+    .lang-btn { background: rgba(255,255,255,.08); border: none; color: var(--muted); font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 4px; cursor: pointer; transition: all .2s; font-family: inherit; }
+    .lang-btn.on { background: var(--orange); color: #fff; }
+    .page-wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+    .page-chip { display: inline-block; background: rgba(245,72,0,.15); color: var(--orange); font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 20px; }
+    h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 700; line-height: 1.15; letter-spacing: -.5px; margin-bottom: 12px; }
+    .updated { font-size: 13px; color: var(--muted); margin-bottom: 40px; }
+    h2 { font-size: 18px; font-weight: 600; color: #fff; margin: 36px 0 10px; border-left: 3px solid var(--orange); padding-left: 14px; }
+    p { color: var(--text); margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; color: var(--text); }
+    .step-block { background: rgba(255,255,255,.04); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin: 16px 0; }
+    .step-block h3 { font-size: 15px; font-weight: 600; margin-bottom: 10px; color: #fff; }
+    .step-path { font-size: 14px; background: rgba(245,72,0,.12); color: var(--orange); padding: 8px 14px; border-radius: 6px; font-family: monospace; letter-spacing: .3px; margin: 8px 0; }
+    .highlight { background: rgba(245,72,0,.1); border: 1px solid rgba(245,72,0,.2); border-radius: 8px; padding: 14px 16px; margin: 16px 0; }
+    .highlight p { margin: 0; }
+    .warning-box { background: rgba(255,80,0,.08); border: 1px solid rgba(255,80,0,.3); border-radius: 8px; padding: 14px 16px; margin: 16px 0; }
+    .warning-box p { margin: 0; }
+    .timeline { margin: 16px 0; }
+    .timeline-row { display: flex; gap: 16px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .timeline-row:last-child { border-bottom: none; }
+    .timeline-day { min-width: 90px; font-size: 12px; font-weight: 700; color: var(--orange); text-transform: uppercase; padding-top: 2px; }
+    .timeline-text { font-size: 14px; color: var(--text); }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); font-size: 14px; }
+    th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+    .cta-btn { display: inline-block; background: var(--orange); color: #fff; font-weight: 600; font-size: 14px; padding: 12px 24px; border-radius: 8px; margin-top: 8px; transition: opacity .2s; }
+    .cta-btn:hover { opacity: .88; text-decoration: none; }
+    footer { border-top: 1px solid var(--border); padding: 24px 52px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .foot-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .foot-legal a { font-size: 12px; color: var(--muted); transition: color .2s; }
+    .foot-legal a:hover { color: #fff; }
+    .foot-copy { font-size: 12px; color: rgba(255,255,255,.22); }
+    [data-lang] { display: none; }
+    [data-lang].on { display: block; }
+    @media(max-width:640px){ nav { padding: 12px 20px; } .nav-links { display: none; } footer { padding: 20px 24px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">DUE<span>MO</span></a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms</a>
+    <a href="/support">Support</a>
+  </div>
+  <div class="lang-btns">
+    <button class="lang-btn on" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('az')">AZ</button>
+    <button class="lang-btn" onclick="setLang('ru')">RU</button>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- ENGLISH -->
+  <div data-lang="en" class="on">
+    <span class="page-chip">Account</span>
+    <h1>Delete Your Account</h1>
+    <p class="updated">Per Google Play &amp; Apple App Store requirements · May 2026</p>
+
+    <p>You have the right to delete your DUEMO account and request removal of your personal data at any time. This page explains how to do it, what happens to your data, and how long it takes.</p>
+
+    <h2>How to Request Deletion</h2>
+
+    <div class="step-block">
+      <h3>📱 Option 1 — In the App (Recommended)</h3>
+      <div class="step-path">Profile → Settings → Account → Delete Account → Confirm</div>
+      <p style="margin-top:8px;font-size:14px">Tap your profile icon → go to Settings → select Account → tap "Delete Account" → confirm your decision. You'll receive a confirmation email.</p>
+    </div>
+
+    <div class="step-block">
+      <h3>📧 Option 2 — Via Email</h3>
+      <p style="font-size:14px">Send a deletion request from your <strong>registered email address</strong> to:</p>
+      <a href="mailto:privacy@duemo.az?subject=Account%20Deletion%20Request&body=Please%20delete%20my%20DUEMO%20account%20and%20all%20associated%20personal%20data." class="cta-btn" style="margin-top:12px;display:inline-block">✉️ Email Deletion Request</a>
+      <p style="margin-top:10px;font-size:13px;color:var(--muted)">Subject: Account Deletion Request · Include your registered email address in the body.</p>
+    </div>
+
+    <h2>What Gets Deleted</h2>
+    <ul>
+      <li>Your profile and personal information</li>
+      <li>Saved delivery addresses</li>
+      <li>Payment method references</li>
+      <li>Order history and preferences</li>
+      <li>All data associated with your account</li>
+    </ul>
+
+    <h2>What We Are Required to Retain</h2>
+    <div class="highlight">
+      <p>📋 Financial transaction records are retained for <strong>7 years</strong> per the Azerbaijan Tax Code (Art. 72). Anonymized, non-identifiable aggregate order statistics may be retained for up to <strong>3 years</strong> for service improvement. These records cannot identify you personally after deletion.</p>
+    </div>
+
+    <table>
+      <tr><th>Data type</th><th>Deleted?</th><th>Retention reason</th></tr>
+      <tr><td>Profile &amp; personal info</td><td>✅ Yes, within 30 days</td><td>—</td></tr>
+      <tr><td>Saved addresses</td><td>✅ Yes, within 30 days</td><td>—</td></tr>
+      <tr><td>Order history</td><td>✅ Yes, within 30 days</td><td>—</td></tr>
+      <tr><td>Financial transaction records</td><td>❌ Retained 7 years</td><td>AZ Tax Code Art. 72</td></tr>
+      <tr><td>Anonymized order statistics</td><td>❌ Retained up to 3 years</td><td>Service improvement (non-identifiable)</td></tr>
+    </table>
+
+    <h2>Deletion Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-row">
+        <div class="timeline-day">Day 1–3</div>
+        <div class="timeline-text">We send a confirmation email to your registered address acknowledging the deletion request.</div>
+      </div>
+      <div class="timeline-row">
+        <div class="timeline-day">Day 4–30</div>
+        <div class="timeline-text">Your account and all associated personal data are permanently deleted from our systems.</div>
+      </div>
+      <div class="timeline-row">
+        <div class="timeline-day">Day 30</div>
+        <div class="timeline-text">Deletion is fully complete. You will receive a final confirmation.</div>
+      </div>
+    </div>
+
+    <h2>⚠️ This Action is Irreversible</h2>
+    <div class="warning-box">
+      <p>Once your account is deleted, it <strong>cannot be restored</strong>. Your order history, earned rewards, and all associated data will be permanently lost. If you want to use DUEMO again in the future, you will need to create a new account.</p>
+    </div>
+
+    <h2>Questions?</h2>
+    <p>If you have questions about account deletion or your personal data, contact our privacy team at <a href="mailto:privacy@duemo.az">privacy@duemo.az</a> or visit our <a href="/support">Support page</a>.</p>
+  </div>
+
+  <!-- AZERBAIJANI -->
+  <div data-lang="az">
+    <span class="page-chip">Hesab</span>
+    <h1>Hesabınızı Silin</h1>
+    <p class="updated">Google Play və Apple App Store tələblərinə uyğun · May 2026</p>
+
+    <p>İstənilən vaxt DUEMO hesabınızı silmək və şəxsi məlumatlarınızın silinməsini tələb etmək hüququnuz var.</p>
+
+    <h2>Silinmə Necə Tələb Olunur</h2>
+
+    <div class="step-block">
+      <h3>📱 Seçim 1 — Tətbiqdə</h3>
+      <div class="step-path">Profil → Parametrlər → Hesab → Hesabı Sil → Təsdiqlə</div>
+    </div>
+
+    <div class="step-block">
+      <h3>📧 Seçim 2 — E-poçt vasitəsilə</h3>
+      <p style="font-size:14px">Qeydiyyatlı e-poçt ünvanınızdan aşağıdakı ünvana müraciət edin:</p>
+      <a href="mailto:privacy@duemo.az?subject=Hesab%20Silinm%C9%99si%20Sor%C4%9Fusu" class="cta-btn" style="margin-top:12px;display:inline-block">✉️ Silinmə Sorğusu Göndər</a>
+    </div>
+
+    <h2>Nə Silinir</h2>
+    <ul>
+      <li>Profiliniz və şəxsi məlumatlarınız</li>
+      <li>Saxlanmış çatdırılma ünvanları</li>
+      <li>Ödəniş üsulu istinadları</li>
+      <li>Sifariş tarixi və seçimlər</li>
+    </ul>
+
+    <h2>Saxlamalı Olduğumuz Məlumatlar</h2>
+    <div class="highlight">
+      <p>📋 Maliyyə əməliyyatı qeydləri Azərbaycan Vergi Məcəlləsinin 72-ci maddəsinə əsasən <strong>7 il</strong> saxlanılır. Anonimləşdirilmiş sifariş statistikası <strong>3 ilə qədər</strong> saxlanıla bilər. Bu qeydlər sizi şəxsən müəyyən edə bilmir.</p>
+    </div>
+
+    <h2>Silinmə Müddəti</h2>
+    <div class="timeline">
+      <div class="timeline-row">
+        <div class="timeline-day">1–3-cü gün</div>
+        <div class="timeline-text">Qeydiyyatlı e-poçt ünvanınıza sorğunun qəbulunu təsdiqləyən məktub göndəririk.</div>
+      </div>
+      <div class="timeline-row">
+        <div class="timeline-day">4–30-cu gün</div>
+        <div class="timeline-text">Hesabınız və bütün şəxsi məlumatlar sistemlərimizdən qalıcı olaraq silinir.</div>
+      </div>
+      <div class="timeline-row">
+        <div class="timeline-day">30-cu gün</div>
+        <div class="timeline-text">Silinmə tamamilə başa çatır. Son təsdiq alacaqsınız.</div>
+      </div>
+    </div>
+
+    <h2>⚠️ Bu Əməliyyat Geri Qaytarıla Bilməz</h2>
+    <div class="warning-box">
+      <p>Hesabınız silindikdən sonra <strong>bərpa edilə bilməz</strong>. Sifariş tarixiniz və qazanılmış mükafatlar həmişəlik itirilir.</p>
+    </div>
+  </div>
+
+  <!-- RUSSIAN -->
+  <div data-lang="ru">
+    <span class="page-chip">Аккаунт</span>
+    <h1>Удалить аккаунт</h1>
+    <p class="updated">Требования Google Play и Apple App Store · Май 2026</p>
+
+    <p>Вы можете удалить аккаунт DUEMO и запросить удаление персональных данных в любое время.</p>
+
+    <h2>Как запросить удаление</h2>
+
+    <div class="step-block">
+      <h3>📱 Способ 1 — В приложении</h3>
+      <div class="step-path">Профиль → Настройки → Аккаунт → Удалить аккаунт → Подтвердить</div>
+    </div>
+
+    <div class="step-block">
+      <h3>📧 Способ 2 — По email</h3>
+      <p style="font-size:14px">Отправьте запрос с вашего <strong>зарегистрированного адреса</strong>:</p>
+      <a href="mailto:privacy@duemo.az?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BD%D0%B0%20%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0" class="cta-btn" style="margin-top:12px;display:inline-block">✉️ Отправить запрос на удаление</a>
+    </div>
+
+    <h2>Что будет удалено</h2>
+    <ul>
+      <li>Профиль и персональные данные</li>
+      <li>Сохранённые адреса доставки</li>
+      <li>Ссылки на способы оплаты</li>
+      <li>История заказов и предпочтения</li>
+    </ul>
+
+    <h2>Что мы обязаны хранить</h2>
+    <div class="highlight">
+      <p>📋 Финансовые записи хранятся <strong>7 лет</strong> согласно ст. 72 Налогового кодекса Азербайджана. Анонимизированная статистика — до <strong>3 лет</strong> (не позволяет идентифицировать вас лично).</p>
+    </div>
+
+    <h2>Сроки удаления</h2>
+    <div class="timeline">
+      <div class="timeline-row">
+        <div class="timeline-day">Дни 1–3</div>
+        <div class="timeline-text">Отправляем подтверждение запроса на ваш зарегистрированный адрес.</div>
+      </div>
+      <div class="timeline-row">
+        <div class="timeline-day">Дни 4–30</div>
+        <div class="timeline-text">Аккаунт и все персональные данные безвозвратно удаляются из наших систем.</div>
+      </div>
+      <div class="timeline-row">
+        <div class="timeline-day">День 30</div>
+        <div class="timeline-text">Удаление полностью завершено. Вы получите финальное подтверждение.</div>
+      </div>
+    </div>
+
+    <h2>⚠️ Действие необратимо</h2>
+    <div class="warning-box">
+      <p>После удаления аккаунт <strong>восстановить невозможно</strong>. История заказов и заработанные бонусы будут утеряны безвозвратно.</p>
+    </div>
+  </div>
+
+</div><!-- page-wrap -->
+
+<footer>
+  <div class="foot-legal">
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/delete-account">Delete Account</a>
+    <a href="/support">Support</a>
+  </div>
+  <p class="foot-copy">© 2026 "DUEMO" MMC · VÖEN: 1407425651</p>
+</footer>
+
+<script>
+let lang = 'en';
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('on', el.dataset.lang === l));
+  document.querySelectorAll('.lang-btn').forEach((b, i) => {
+    const langs = ['en','az','ru'];
+    b.classList.toggle('on', langs[i] === l);
+  });
+  document.documentElement.lang = l;
+  try { localStorage.setItem('dl', l); } catch(e) {}
+}
+try { const s = localStorage.getItem('dl'); if (s && ['en','az','ru'].includes(s)) setLang(s); } catch(e) {}
+</script>
+</body>
+</html>

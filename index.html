@@ -597,13 +597,17 @@ footer {
   background: var(--ink);
   border-top: 1px solid rgba(255,255,255,.06);
   padding: 32px 52px;
-  display: flex; align-items: center; justify-content: space-between; gap: 24px;
-  flex-wrap: wrap;
+  display: flex; flex-direction: column; gap: 16px;
 }
+.foot-top { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 .foot-logo svg { height: 22px; width: auto }
 .foot-links { display: flex; gap: 28px }
 .foot-links a { font-size: 13px; color: rgba(255,255,255,.3); transition: color .2s }
 .foot-links a:hover { color: rgba(255,255,255,.75) }
+.foot-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.06); }
+.foot-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+.foot-legal a { font-size: 11px; color: rgba(255,255,255,.25); transition: color .2s; text-decoration: none; }
+.foot-legal a:hover { color: rgba(255,255,255,.6); }
 .foot-copy { font-size: 12px; color: rgba(255,255,255,.22); letter-spacing: .3px }
 
 /* ── FOOD GALLERY ───────────────────────────────── */
@@ -1307,6 +1311,7 @@ footer {
 
 <!-- ── FOOTER ─────────────────────────────────────────── -->
 <footer>
+  <div class="foot-top">
   <div class="foot-logo">
     <svg height="22" viewBox="0 0 987.35 277.11" fill="none" xmlns="http://www.w3.org/2000/svg">
       <style>.fl1{fill:#ffffff;opacity:.3}.fl2{fill:#f54800;opacity:.5}</style>
@@ -1326,13 +1331,22 @@ footer {
     <a href="#team"><span data-li lang="en" class="on">Team</span><span data-li lang="az">Komanda</span><span data-li lang="ru">Команда</span><span data-li lang="tr">Ekip</span><span data-li lang="de">Team</span></a>
     <a href="mailto:hello@duemo.ai">hello@duemo.ai</a>
   </div>
-  <p class="foot-copy">
-    <span data-li lang="en" class="on">© 2026 DUEMO, MMC · Baku, Azerbaijan</span>
-    <span data-li lang="az">© 2026 DUEMO, MMC · Bakı, Azərbaycan</span>
-    <span data-li lang="ru">© 2026 DUEMO, MMC · Баку, Азербайджан</span>
-    <span data-li lang="tr">© 2026 DUEMO, MMC · Bakü, Azerbaycan</span>
-    <span data-li lang="de">© 2026 DUEMO, MMC · Baku, Aserbaidschan</span>
-  </p>
+  </div><!-- end foot-top -->
+  <div class="foot-bottom">
+    <div class="foot-legal">
+      <a href="/privacy"><span data-li lang="en" class="on">Privacy Policy</span><span data-li lang="az">Məxfilik Siyasəti</span><span data-li lang="ru">Конфиденциальность</span><span data-li lang="tr">Gizlilik Politikası</span><span data-li lang="de">Datenschutz</span></a>
+      <a href="/terms"><span data-li lang="en" class="on">Terms of Service</span><span data-li lang="az">İstifadə Şərtləri</span><span data-li lang="ru">Условия использования</span><span data-li lang="tr">Hizmet Şartları</span><span data-li lang="de">Nutzungsbedingungen</span></a>
+      <a href="/delete-account"><span data-li lang="en" class="on">Delete Account</span><span data-li lang="az">Hesabı Sil</span><span data-li lang="ru">Удалить аккаунт</span><span data-li lang="tr">Hesap Sil</span><span data-li lang="de">Konto löschen</span></a>
+      <a href="/support"><span data-li lang="en" class="on">Support</span><span data-li lang="az">Dəstək</span><span data-li lang="ru">Поддержка</span><span data-li lang="tr">Destek</span><span data-li lang="de">Support</span></a>
+    </div>
+    <p class="foot-copy">
+      <span data-li lang="en" class="on">© 2026 DUEMO, MMC · Baku, Azerbaijan</span>
+      <span data-li lang="az">© 2026 DUEMO, MMC · Bakı, Azərbaycan</span>
+      <span data-li lang="ru">© 2026 DUEMO, MMC · Баку, Азербайджан</span>
+      <span data-li lang="tr">© 2026 DUEMO, MMC · Bakü, Azerbaycan</span>
+      <span data-li lang="de">© 2026 DUEMO, MMC · Baku, Aserbaidschan</span>
+    </p>
+  </div><!-- end foot-bottom -->
 </footer>
 
 <script>
