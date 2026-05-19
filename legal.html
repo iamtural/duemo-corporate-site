@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legal &amp; Privacy · Duemo</title>
+  <meta name="description" content="Duemo Privacy Policy, Terms of Service, Account Deletion, Data Safety and Support — all in one place."/>
+  <link rel="canonical" href="https://duemo.ai/legal"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg:#FFEADD; --card:#fff; --brown:#773000; --brown-dk:#3D1800;
+      --orange:#F54800; --ol:rgba(245,72,0,.13); --ob:rgba(245,72,0,.28);
+      --text:#3D1800; --muted:rgba(61,24,0,.5); --border:rgba(119,48,0,.12);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;line-height:1.7}
+    a{color:var(--orange);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* ── NAV ── */
+    nav{position:sticky;top:0;z-index:100;background:rgba(255,234,221,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:13px 48px;gap:16px}
+    .nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+    .nav-logo svg{width:34px;height:34px;flex-shrink:0}
+    .nav-wordmark{font-family:'Dela Gothic One',sans-serif;font-size:21px;color:var(--brown);line-height:1}
+    .nav-links{display:flex;gap:22px}
+    .nav-links a{font-size:13px;color:var(--muted);font-weight:500;transition:color .2s}
+    .nav-links a:hover{color:var(--brown);text-decoration:none}
+    .lang-btns{display:flex;gap:5px;flex-shrink:0}
+    .lang-btn{background:rgba(119,48,0,.08);border:none;color:var(--muted);font-size:11px;font-weight:700;padding:4px 9px;border-radius:5px;cursor:pointer;transition:all .2s;font-family:inherit;letter-spacing:.4px}
+    .lang-btn.on{background:var(--orange);color:#fff}
+
+    /* ── PAGE HEADER ── */
+    .pg-hd{max-width:920px;margin:0 auto;padding:50px 24px 28px}
+    .chip{display:inline-block;background:var(--orange);color:#fff;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:4px 13px;border-radius:20px;margin-bottom:16px}
+    .pg-hd h1{font-family:'Dela Gothic One',sans-serif;font-size:clamp(30px,6vw,50px);color:var(--brown);line-height:1.1;margin-bottom:10px}
+    .pg-hd .sub{font-size:15px;color:var(--muted);margin-bottom:6px}
+    .pg-hd .upd{font-size:12px;color:var(--muted)}
+
+    /* ── REVIEWER BOX ── */
+    .rv-wrap{max-width:920px;margin:0 auto 14px;padding:0 24px}
+    .rv{background:var(--brown);border-radius:16px;padding:26px 30px;color:#fff}
+    .rv-label{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,234,221,.45);margin-bottom:18px}
+    .rv-grid{display:grid;grid-template-columns:1fr 1px 1fr;gap:0}
+    .rv-divider{background:rgba(255,234,221,.1)}
+    .rv-col{padding:0 24px}
+    .rv-col:first-child{padding-left:0}
+    .rv-col:last-child{padding-right:0}
+    .rv-store{font-size:13px;font-weight:800;color:#FFEADD;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+    .rv-store .si{width:22px;height:22px;border-radius:6px;font-size:12px;display:inline-flex;align-items:center;justify-content:center}
+    .si-gp{background:#01875F}
+    .si-ap{background:#1C1C1E}
+    .url-row{display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap}
+    .url-key{font-size:11px;color:rgba(255,234,221,.4);min-width:130px;flex-shrink:0}
+    .url-val{font-size:12px;color:#FFA500;font-weight:700;font-family:monospace;flex:1;min-width:0;word-break:break-all}
+    .cpb{background:rgba(255,234,221,.1);border:1px solid rgba(255,234,221,.18);color:rgba(255,234,221,.6);font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:all .18s;white-space:nowrap;flex-shrink:0}
+    .cpb:hover{background:rgba(255,234,221,.2);color:#FFEADD}
+    .cpb.ok{background:#2C7A47;border-color:#2C7A47;color:#fff}
+    .rv-foot{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,234,221,.1);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .rv-foot-lbl{font-size:11px;color:rgba(255,234,221,.4)}
+    .abadge{font-size:11px;font-weight:700;color:rgba(255,234,221,.75);background:rgba(255,234,221,.08);padding:3px 10px;border-radius:20px}
+    .rv-foot-contact{margin-top:6px;font-size:11px;color:rgba(255,234,221,.4);width:100%}
+    .rv-foot-contact a{color:rgba(255,165,0,.75)}
+
+    /* ── TOC ── */
+    .toc-wrap{max-width:920px;margin:0 auto 10px;padding:0 24px}
+    .toc{display:flex;gap:6px;flex-wrap:wrap}
+    .tl{font-size:13px;font-weight:600;color:var(--muted);padding:7px 16px;border-radius:24px;border:1.5px solid var(--border);transition:all .2s;text-decoration:none;background:transparent}
+    .tl:hover,.tl.on{background:var(--orange);color:#fff;border-color:var(--orange);text-decoration:none}
+
+    /* ── PAGE WRAP ── */
+    .pw{max-width:920px;margin:0 auto;padding:10px 24px 80px}
+
+    /* ── SECTION ── */
+    .sec{background:var(--card);border-radius:16px;border:1px solid var(--border);margin-bottom:14px;overflow:hidden}
+    .sec-hd{padding:26px 30px 18px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:14px}
+    .sec-icon{width:46px;height:46px;border-radius:12px;background:var(--ol);border:1px solid var(--ob);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;margin-top:2px}
+    .sec-num{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--orange);margin-bottom:3px}
+    .sec h2{font-family:'Dela Gothic One',sans-serif;font-size:22px;color:var(--brown);line-height:1.2}
+    .sec-sub{font-size:12px;color:var(--muted);margin-top:4px}
+    .sec-ql{padding:10px 30px;background:rgba(245,72,0,.05);border-bottom:1px solid var(--border);display:flex;gap:14px;flex-wrap:wrap;font-size:12px}
+    .sec-ql a{color:var(--orange);font-weight:700}
+    .sb{padding:26px 30px}
+    .sb h3{font-size:14px;font-weight:700;color:var(--brown);margin:22px 0 8px;padding-left:12px;border-left:3px solid var(--orange)}
+    .sb h3:first-child{margin-top:0}
+    .sb p{font-size:14px;color:var(--text);margin-bottom:11px}
+    .sb ul,.sb ol{padding-left:20px;margin-bottom:11px}
+    .sb li{font-size:14px;color:var(--text);margin-bottom:5px}
+    .hl{background:var(--ol);border:1px solid var(--ob);border-radius:10px;padding:13px 16px;margin:12px 0}
+    .hl p{margin:0;font-size:14px}
+
+    /* ── STEPS ── */
+    .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+    .step{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:7px}
+    .sn{width:26px;height:26px;border-radius:50%;background:var(--orange);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .st{font-size:13px;font-weight:700;color:var(--brown)}
+    .sd{font-size:12px;color:var(--muted);line-height:1.5}
+
+    /* ── DELETE CTA ── */
+    .del-cta{background:var(--bg);border:1.5px solid var(--ob);border-radius:12px;padding:18px 22px;margin:18px 0;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .del-cta h4{font-size:15px;font-weight:700;color:var(--brown);margin-bottom:3px}
+    .del-cta p{font-size:13px;color:var(--muted);margin:0}
+    .del-btn{display:inline-flex;align-items:center;gap:7px;background:var(--orange);color:#fff;font-size:14px;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;padding:11px 22px;border-radius:30px;text-decoration:none;transition:opacity .2s;white-space:nowrap}
+    .del-btn:hover{opacity:.86;text-decoration:none}
+
+    /* ── TABLES ── */
+    .tw{overflow-x:auto;margin:14px 0}
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    th{background:var(--brown);color:#FFEADD;padding:9px 14px;text-align:left;font-weight:700;font-size:12px;letter-spacing:.4px}
+    th:first-child{border-radius:8px 0 0 0}
+    th:last-child{border-radius:0 8px 0 0}
+    td{padding:9px 14px;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px}
+    tr:last-child td{border-bottom:none}
+    tr:nth-child(even) td{background:rgba(255,234,221,.5)}
+    .y{color:#2A6E3A;font-weight:700}
+    .n{color:var(--muted)}
+    .c{color:var(--orange);font-weight:600}
+
+    /* ── APP TYPE BADGES ── */
+    .at{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;margin-right:3px;letter-spacing:.2px}
+    .at-c{background:rgba(245,72,0,.12);color:var(--orange)}
+    .at-ch{background:rgba(119,48,0,.1);color:var(--brown)}
+    .at-cr{background:rgba(85,148,0,.12);color:#3A6A00}
+
+    /* ── CONTACT CARDS ── */
+    .cc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:14px 0}
+    .cc{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:17px}
+    .cc-icon{font-size:22px;margin-bottom:9px}
+    .cc-lbl{font-size:11px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+    .cc-val{font-size:14px;font-weight:700;color:var(--brown)}
+    .cc-val a{color:var(--brown);text-decoration:none}
+    .cc-val a:hover{color:var(--orange)}
+    .cc-sub{font-size:12px;color:var(--muted);margin-top:2px}
+
+    /* ── COMPANY BOX ── */
+    .co-box{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-top:14px}
+    .co-box h4{font-size:13px;font-weight:700;color:var(--brown);margin-bottom:11px}
+    .co-row{display:flex;gap:8px;margin-bottom:5px;font-size:13px}
+    .co-k{color:var(--muted);min-width:155px;flex-shrink:0}
+    .co-v{color:var(--text);font-weight:500}
+
+    /* ── FOOTER ── */
+    footer{background:var(--brown);padding:26px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .ft-logo{font-family:'Dela Gothic One',sans-serif;font-size:18px;color:#FFEADD;text-decoration:none;display:flex;align-items:center;gap:8px}
+    .ft-logo svg{width:28px;height:28px}
+    .ft-links{display:flex;gap:18px;flex-wrap:wrap}
+    .ft-links a{font-size:12px;color:rgba(255,234,221,.45);transition:color .2s}
+    .ft-links a:hover{color:#FFEADD;text-decoration:none}
+    .ft-copy{font-size:12px;color:rgba(255,234,221,.25)}
+
+    /* ── LANG ── */
+    [data-lang]{display:none}
+    [data-lang].on{display:block}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:700px){
+      nav{padding:12px 16px}
+      .nav-links{display:none}
+      .rv-grid{grid-template-columns:1fr}
+      .rv-divider{display:none}
+      .rv-col{padding:0 0 16px}
+      .rv-col:last-child{padding-top:16px;padding-bottom:0;border-top:1px solid rgba(255,234,221,.1)}
+      .sec-hd{padding:18px 18px 14px}
+      .sb{padding:18px}
+      .sec-ql{padding:8px 18px}
+      footer{padding:22px 16px}
+      .steps{grid-template-columns:1fr 1fr}
+    }
+    @media print{
+      nav,.lang-btns,.toc-wrap,.cpb,.del-btn{display:none}
+      .sec{break-inside:avoid}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─────────── NAV ─────────── -->
+<nav>
+  <a href="/" class="nav-logo">
+    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Duemo logomark">
+      <ellipse cx="9.5" cy="9" rx="8" ry="9" fill="#F54800"/>
+      <path d="M5 18C3.5 27 7 42 21 46H34C43 45 47 37 47 28C47 15 39 7 27 7C17 7 6.5 11 5 18Z" fill="#F54800"/>
+      <rect x="4" y="12" width="18" height="14" fill="#F54800"/>
+      <path d="M19 16L19 38C36 37 41 30 41 27C41 21 35 16 19 16Z" fill="#FFEADD"/>
+      <circle cx="10" cy="47" r="3.8" fill="none" stroke="#F54800" stroke-width="3"/>
+    </svg>
+    <span class="nav-wordmark">Duemo</span>
+  </a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#terms">Terms</a>
+    <a href="#delete-account">Delete Account</a>
+    <a href="#data-safety">Data Safety</a>
+    <a href="#support">Support</a>
+  </div>
+  <div class="lang-btns">
+    <button class="lang-btn on" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('az')">AZ</button>
+    <button class="lang-btn" onclick="setLang('ru')">RU</button>
+  </div>
+</nav>
+
+<!-- ─────────── PAGE HEADER ─────────── -->
+<div class="pg-hd">
+  <span class="chip">Legal &amp; Compliance</span>
+  <div data-lang="en" class="on"><h1>Privacy, Terms &amp; Policies</h1><p class="sub">All legal and compliance information for Duemo — Customer, Chef, and Courier apps.</p></div>
+  <div data-lang="az"><h1>Məxfilik, Şərtlər &amp; Siyasətlər</h1><p class="sub">Duemo — Müştəri, Aşpaz və Kuryer tətbiqləri üçün bütün hüquqi məlumatlar.</p></div>
+  <div data-lang="ru"><h1>Конфиденциальность, Условия &amp; Политики</h1><p class="sub">Вся юридическая информация для приложений Duemo — Клиент, Повар, Курьер.</p></div>
+  <p class="upd">Last updated: May 2026 · Effective: October 2025 · "DUEMO" MMC · VÖEN: 1407425651</p>
+</div>
+
+<!-- ─────────── REVIEWER BOX ─────────── -->
+<div class="rv-wrap">
+  <div class="rv">
+    <p class="rv-label">📱 App Store &amp; Play Store — Reviewer Quick Reference</p>
+    <div class="rv-grid">
+      <div class="rv-col">
+        <div class="rv-store"><span class="si si-gp">▶</span> Google Play Store</div>
+        <div class="url-row">
+          <span class="url-key">Privacy Policy URL</span>
+          <span class="url-val">duemo.ai/legal#privacy</span>
+          <button class="cpb" onclick="copyUrl('https://duemo.ai/legal#privacy',this)">Copy</button>
+        </div>
+        <div class="url-row">
+          <span class="url-key">Delete Account URL</span>
+          <span class="url-val">duemo.ai/legal#delete-account</span>
+          <button class="cpb" onclick="copyUrl('https://duemo.ai/legal#delete-account',this)">Copy</button>
+        </div>
+        <div class="url-row">
+          <span class="url-key">Support URL</span>
+          <span class="url-val">duemo.ai/legal#support</span>
+          <button class="cpb" onclick="copyUrl('https://duemo.ai/legal#support',this)">Copy</button>
+        </div>
+        <div class="url-row">
+          <span class="url-key">Data Safety URL</span>
+          <span class="url-val">duemo.ai/legal#data-safety</span>
+          <button class="cpb" onclick="copyUrl('https://duemo.ai/legal#data-safety',this)">Copy</button>
+        </div>
+      </div>
+      <div class="rv-divider"></div>
+      <div class="rv-col">
+        <div class="rv-store"><span class="si si-ap">🍎</span> Apple App Store</div>
+        <div class="url-row">
+          <span class="url-key">Privacy Policy URL</span>
+          <span class="url-val">duemo.ai/legal#privacy</span>
+          <button class="cpb" onclick="copyUrl('https://duemo.ai/legal#privacy',this)">Copy</button>
+        </div>
+        <div class="url-row">
+          <span class="url-key">Support URL</span>
+          <span class="url-val">duemo.ai/legal#support</span>
+          <button class="cpb" onclick="copyUrl('https://duemo.ai/legal#support',this)">Copy</button>
+        </div>
+        <div class="url-row">
+          <span class="url-key">Marketing URL</span>
+          <span class="url-val">duemo.ai</span>
+          <button class="cpb" onclick="copyUrl('https://duemo.ai',this)">Copy</button>
+        </div>
+        <div class="url-row">
+          <span class="url-key">Review Contact</span>
+          <span class="url-val">hello@duemo.ai</span>
+          <button class="cpb" onclick="copyUrl('hello@duemo.ai',this)">Copy</button>
+        </div>
+      </div>
+    </div>
+    <div class="rv-foot">
+      <span class="rv-foot-lbl">Apps covered:</span>
+      <span class="abadge">Duemo Customer</span>
+      <span class="abadge">Duemo Chef</span>
+      <span class="abadge">Duemo Courier</span>
+      <p class="rv-foot-contact">Company: "DUEMO" MMC · VÖEN: 1407425651 · AZ1014 Baku, Nasimi District, Bulbul Ave 30/5, Azerbaijan · <a href="mailto:hello@duemo.ai">hello@duemo.ai</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ─────────── TABLE OF CONTENTS ─────────── -->
+<div class="toc-wrap">
+  <div class="toc">
+    <a href="#privacy" class="tl">🔒 Privacy Policy</a>
+    <a href="#terms" class="tl">📋 Terms of Service</a>
+    <a href="#delete-account" class="tl">🗑️ Delete Account</a>
+    <a href="#data-safety" class="tl">🛡️ Data Safety</a>
+    <a href="#support" class="tl">💬 Support</a>
+  </div>
+</div>
+
+<!-- ─────────── MAIN CONTENT ─────────── -->
+<div class="pw">
+
+  <!-- ═══ PRIVACY POLICY ═══ -->
+  <div class="sec" id="privacy">
+    <div class="sec-hd">
+      <div class="sec-icon">🔒</div>
+      <div>
+        <p class="sec-num">Section 1</p>
+        <h2>Privacy Policy</h2>
+        <p class="sec-sub">How Duemo collects, uses, and protects your personal data · Last updated May 2026</p>
+      </div>
+    </div>
+    <div class="sec-ql">
+      <a href="#pp-collect">Data We Collect</a>
+      <a href="#pp-use">How We Use It</a>
+      <a href="#pp-share">Sharing</a>
+      <a href="#pp-retention">Retention</a>
+      <a href="#pp-rights">Your Rights</a>
+      <a href="#pp-location">Location</a>
+      <a href="#pp-contact">Contact</a>
+    </div>
+    <div class="sb">
+
+      <!-- EN -->
+      <div data-lang="en" class="on">
+        <p>This Privacy Policy describes how <strong>"DUEMO" MMC</strong> ("Duemo", "we", "us") collects, uses, and protects personal information when you use the Duemo mobile applications (Customer, Chef, Courier) and website. By using our services, you agree to the practices described here.</p>
+
+        <h3 id="pp-collect">1. Data We Collect</h3>
+        <p>The data we collect depends on which Duemo app you use:</p>
+        <div class="tw"><table>
+          <tr><th>Data Type</th><th>Customer App</th><th>Chef App</th><th>Courier App</th></tr>
+          <tr><td>Name, email, phone number</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Delivery address</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+          <tr><td>Order history &amp; preferences</td><td class="y">✓</td><td class="y">✓ (received orders)</td><td class="y">✓ (deliveries)</td></tr>
+          <tr><td>Profile photo</td><td class="c">Optional</td><td class="c">Optional</td><td class="c">Optional</td></tr>
+          <tr><td>Payment method (last 4 digits only)</td><td class="y">✓</td><td class="n">—</td><td class="n">—</td></tr>
+          <tr><td>Bank account for payouts</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Food photos &amp; menu content</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td></tr>
+          <tr><td>Kitchen/business address</td><td class="n">—</td><td class="y">✓</td><td class="n">—</td></tr>
+          <tr><td>Government ID (for verification)</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Vehicle information</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+          <tr><td>Real-time GPS location</td><td class="c">Optional (order tracking)</td><td class="n">—</td><td class="y">✓ Required while on active delivery</td></tr>
+          <tr><td>Device identifiers (for push notifications)</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Ratings &amp; reviews</td><td class="y">✓</td><td class="y">✓ (received)</td><td class="y">✓ (received)</td></tr>
+          <tr><td>In-app messages &amp; support chats</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        </table></div>
+
+        <h3 id="pp-use">2. How We Use Your Data</h3>
+        <ul>
+          <li>To create and manage your account</li>
+          <li>To process orders, payments, and deliveries</li>
+          <li>To connect customers with chefs and couriers</li>
+          <li>To send push notifications about your orders</li>
+          <li>To verify identity and prevent fraud</li>
+          <li>To improve our platform, safety standards, and user experience</li>
+          <li>To comply with Azerbaijan food safety (AFSA) and tax regulations</li>
+          <li>To respond to your support requests</li>
+        </ul>
+
+        <h3 id="pp-share">3. Data Sharing</h3>
+        <p>We do <strong>not</strong> sell your personal data. We share data only as necessary to operate the service:</p>
+        <ul>
+          <li><strong>Chefs</strong> see the customer's name, order details, and delivery zone (not full address)</li>
+          <li><strong>Couriers</strong> see the pick-up address (chef location) and delivery address</li>
+          <li><strong>Payment processors</strong> (certified third parties) handle card transactions — Duemo does not store full card numbers</li>
+          <li><strong>Identity verification providers</strong> may process government ID for chef and courier onboarding</li>
+          <li><strong>Legal authorities</strong> if required by the laws of the Republic of Azerbaijan</li>
+        </ul>
+
+        <h3>4. Payment &amp; Card Data</h3>
+        <div class="hl"><p>💳 Duemo does <strong>not</strong> store full card numbers, CVV codes, or banking credentials on its servers. All payment processing is handled by certified third-party payment processors. We store only the card type and last 4 digits for your reference.</p></div>
+
+        <h3 id="pp-location">5. Location Data</h3>
+        <p><strong>Customer App:</strong> Location access is optional and used only to suggest nearby chefs and to share your approximate location with the courier during active delivery. You can disable location access at any time in your device settings.</p>
+        <p><strong>Courier App:</strong> Couriers must enable precise GPS location while an active delivery is in progress. This data is used to coordinate the delivery and display estimated arrival time to the customer. Location is not tracked outside of active delivery sessions.</p>
+
+        <h3 id="pp-retention">6. Data Retention</h3>
+        <div class="tw"><table>
+          <tr><th>Data Category</th><th>Retention Period</th><th>Reason</th></tr>
+          <tr><td>Account profile (name, email, phone, address)</td><td>Until account deletion + 30 days</td><td>Service delivery</td></tr>
+          <tr><td>Order &amp; delivery records</td><td>Until account deletion + 30 days</td><td>Service history</td></tr>
+          <tr><td>Financial transaction records</td><td><strong>7 years</strong> after transaction</td><td>AZ Tax Code Art. 72 (mandatory)</td></tr>
+          <tr><td>Food safety compliance records (chefs)</td><td><strong>5 years</strong></td><td>AFSA regulatory requirement</td></tr>
+          <tr><td>Anonymized usage &amp; analytics data</td><td><strong>3 years</strong></td><td>Platform improvement (not linked to you)</td></tr>
+          <tr><td>Support communications</td><td>2 years</td><td>Quality assurance</td></tr>
+          <tr><td>Identity verification records (chefs &amp; couriers)</td><td>Duration of active account + 1 year</td><td>Fraud prevention, AFSA compliance</td></tr>
+        </table></div>
+
+        <h3 id="pp-rights">7. Your Rights</h3>
+        <p>Under applicable data protection law, you have the right to:</p>
+        <ul>
+          <li><strong>Access</strong> — request a copy of the personal data we hold about you</li>
+          <li><strong>Correction</strong> — update inaccurate or incomplete data</li>
+          <li><strong>Deletion</strong> — request deletion of your account and associated data (see <a href="#delete-account">Account Deletion</a>)</li>
+          <li><strong>Portability</strong> — receive your data in a machine-readable format</li>
+          <li><strong>Objection</strong> — object to processing based on legitimate interests</li>
+          <li><strong>Withdraw consent</strong> — where processing is based on consent, you may withdraw it at any time</li>
+        </ul>
+        <p>To exercise any of these rights, contact <a href="mailto:privacy@duemo.az">privacy@duemo.az</a>. We will respond within 30 days.</p>
+
+        <h3>8. Push Notifications</h3>
+        <p>We send push notifications about order status, delivery updates, and promotions. You can disable notifications at any time in your device settings. This will not affect your ability to use the app or view order status within the app.</p>
+
+        <h3>9. Cookies &amp; Device Identifiers</h3>
+        <p>The Duemo website uses functional cookies necessary for session management. We do not use advertising or tracking cookies. Our mobile apps use device identifiers (such as FCM tokens) solely to deliver push notifications. These are not shared with advertising networks.</p>
+
+        <h3>10. Children's Privacy</h3>
+        <p>Duemo is not intended for users under the age of 13. We do not knowingly collect personal data from children under 13. If you believe a child has provided us with personal information, contact us at <a href="mailto:privacy@duemo.az">privacy@duemo.az</a> for immediate removal.</p>
+
+        <h3>11. Changes to This Policy</h3>
+        <p>We may update this policy from time to time. We will notify you of material changes via in-app notification or email. Continued use of Duemo after the effective date of changes constitutes acceptance of the updated policy.</p>
+
+        <h3 id="pp-contact">12. Data Controller &amp; Contact</h3>
+        <div class="co-box">
+          <h4>Data Controller</h4>
+          <div class="co-row"><span class="co-k">Company</span><span class="co-v">"DUEMO" Məhdud Məsuliyyətli Cəmiyyəti (MMC)</span></div>
+          <div class="co-row"><span class="co-k">VÖEN / Tax ID</span><span class="co-v">1407425651</span></div>
+          <div class="co-row"><span class="co-k">Registered Address</span><span class="co-v">AZ1014, Baku, Nasimi District, Bulbul Avenue, Building 30, Apt. 5, Azerbaijan</span></div>
+          <div class="co-row"><span class="co-k">Privacy Contact</span><span class="co-v"><a href="mailto:privacy@duemo.az">privacy@duemo.az</a></span></div>
+          <div class="co-row"><span class="co-k">General Contact</span><span class="co-v"><a href="mailto:hello@duemo.ai">hello@duemo.ai</a></span></div>
+          <div class="co-row"><span class="co-k">Governing Law</span><span class="co-v">Republic of Azerbaijan</span></div>
+        </div>
+      </div>
+
+      <!-- AZ -->
+      <div data-lang="az">
+        <p><strong>"DUEMO" MMC</strong> bu Məxfilik Siyasəti ilə Duemo mobil tətbiqləri (Müştəri, Aşpaz, Kuryer) istifadəçilərinin şəxsi məlumatlarının necə toplanıldığını, istifadə edildiyini və qorunduğunu izah edir.</p>
+        <h3>1. Toplanan Məlumatlar</h3>
+        <p>Ad, soyad, email, telefon nömrəsi, çatdırılma ünvanı (müştərilər üçün), sifariş tarixi, ödəniş metodu (son 4 rəqəm), profil şəkli (könüllü). Kuryer tətbiqi üçün aktiv çatdırılma zamanı GPS məkanı məcburidir.</p>
+        <h3>2. Məlumatların İstifadəsi</h3>
+        <p>Hesab idarəetməsi, sifariş emalı, ödənişlər, bildirişlər, saxtakarlığın qarşısının alınması, AFSA tənzimləyici tələblərinə uyğunluq.</p>
+        <h3>3. Məlumatların Paylaşılması</h3>
+        <p>Məlumatlarınız satılmır. Yalnız xidmətin göstərilməsi üçün aşpazlar, kuryerlər və sertifikatlaşdırılmış ödəniş prosessorları ilə paylaşılır.</p>
+        <h3>4. Saxlama Müddəti</h3>
+        <p>Profil məlumatları hesab silinənədək + 30 gün. Maliyyə qeydləri Vergi Məcəlləsinin 72-ci maddəsinə əsasən 7 il saxlanılır.</p>
+        <h3>5. Hüquqlarınız</h3>
+        <p>Məlumatlarınıza giriş, düzəliş, silinmə, daşınma və etiraz hüquqlarınız var. Müraciət: <a href="mailto:privacy@duemo.az">privacy@duemo.az</a></p>
+        <div class="co-box">
+          <h4>Əlaqə</h4>
+          <div class="co-row"><span class="co-k">Şirkət</span><span class="co-v">"DUEMO" MMC · VÖEN: 1407425651</span></div>
+          <div class="co-row"><span class="co-k">Ünvan</span><span class="co-v">AZ1014, Bakı, Nəsimi rayonu, Bülbül pr., ev 30, mənzil 5</span></div>
+          <div class="co-row"><span class="co-k">Məxfilik</span><span class="co-v"><a href="mailto:privacy@duemo.az">privacy@duemo.az</a></span></div>
+        </div>
+      </div>
+
+      <!-- RU -->
+      <div data-lang="ru">
+        <p><strong>"DUEMO" ООО</strong> настоящей Политикой конфиденциальности разъясняет, как собираются, используются и защищаются персональные данные пользователей приложений Duemo (Клиент, Повар, Курьер).</p>
+        <h3>1. Собираемые данные</h3>
+        <p>Имя, email, телефон, адрес доставки (для клиентов), история заказов, способ оплаты (последние 4 цифры), фото профиля (по желанию). Для приложения Курьер геолокация обязательна во время активной доставки.</p>
+        <h3>2. Использование данных</h3>
+        <p>Управление аккаунтом, обработка заказов, уведомления, предотвращение мошенничества, соблюдение требований AFSA.</p>
+        <h3>3. Передача данных</h3>
+        <p>Данные не продаются. Передаются только поварам, курьерам и сертифицированным платёжным системам в целях предоставления сервиса.</p>
+        <h3>4. Сроки хранения</h3>
+        <p>Данные профиля — до удаления аккаунта + 30 дней. Финансовые записи хранятся 7 лет согласно ст. 72 Налогового кодекса Азербайджана.</p>
+        <h3>5. Ваши права</h3>
+        <p>Вы имеете право на доступ, исправление, удаление, перенос данных и возражение против обработки. Контакт: <a href="mailto:privacy@duemo.az">privacy@duemo.az</a></p>
+        <div class="co-box">
+          <h4>Контакты</h4>
+          <div class="co-row"><span class="co-k">Компания</span><span class="co-v">"DUEMO" ООО · ИНН: 1407425651</span></div>
+          <div class="co-row"><span class="co-k">Адрес</span><span class="co-v">AZ1014, Баку, Насиминский р-н, пр. Бюльбюль 30/5</span></div>
+          <div class="co-row"><span class="co-k">Конфиденциальность</span><span class="co-v"><a href="mailto:privacy@duemo.az">privacy@duemo.az</a></span></div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /privacy -->
+
+  <!-- ═══ TERMS OF SERVICE ═══ -->
+  <div class="sec" id="terms">
+    <div class="sec-hd">
+      <div class="sec-icon">📋</div>
+      <div>
+        <p class="sec-num">Section 2</p>
+        <h2>Terms of Service</h2>
+        <p class="sec-sub">Rules and conditions for using Duemo · Last updated May 2026 · Effective October 2025</p>
+      </div>
+    </div>
+    <div class="sb">
+
+      <div data-lang="en" class="on">
+        <p>These Terms of Service ("Terms") govern your use of the Duemo mobile applications and website operated by <strong>"DUEMO" MMC</strong>. By accessing or using our service, you agree to be bound by these Terms.</p>
+
+        <h3>1. About Duemo</h3>
+        <p>Duemo is a marketplace platform connecting home chefs, couriers, and customers for home-cooked food delivery in Baku, Azerbaijan. All food is prepared by registered independent home chefs who comply with Azerbaijan Food Safety Agency (AFSA) requirements.</p>
+
+        <h3>2. Account Registration</h3>
+        <p>To use Duemo, you must create an account. You agree to:</p>
+        <ul>
+          <li>Provide accurate and complete registration information</li>
+          <li>Maintain the confidentiality of your account credentials</li>
+          <li>Accept responsibility for all activity under your account</li>
+          <li>Notify us immediately at <a href="mailto:hello@duemo.ai">hello@duemo.ai</a> of any unauthorized use</li>
+          <li>Be at least 13 years of age to register an account</li>
+        </ul>
+
+        <h3>3. Orders &amp; Payment</h3>
+        <div class="hl"><p>📋 <strong>Payment Consent:</strong> By placing an order, you confirm you have read and accept the payment terms. On the payment page, you must check the box: "I have read and accept the payment terms" before completing any transaction.</p></div>
+        <p>Orders are binding once confirmed. Payment is processed securely through certified payment processors. Duemo does not store card data on its servers.</p>
+
+        <h3>4. Cancellations &amp; Refunds</h3>
+        <ul>
+          <li>Orders may be cancelled within <strong>5 minutes</strong> of placement and before the chef begins preparation</li>
+          <li>Once preparation has begun, cancellation is not possible</li>
+          <li>For quality issues or incorrect orders, contact us within <strong>2 hours</strong> of delivery at <a href="mailto:hello@duemo.ai">hello@duemo.ai</a></li>
+          <li>Approved refunds are issued to the original payment method within 5–10 business days</li>
+        </ul>
+
+        <h3>5. Food Safety</h3>
+        <p>All chefs on Duemo operate in compliance with the applicable food safety regulations of the Republic of Azerbaijan and AFSA requirements. Duemo reserves the right to remove any chef who fails to meet safety standards. Users with food allergies must contact the chef directly through the app before ordering.</p>
+
+        <h3>6. Prohibited Conduct</h3>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use the platform for any unlawful purpose</li>
+          <li>Submit false, misleading, or fraudulent information</li>
+          <li>Attempt to disrupt, interfere with, or exploit the platform</li>
+          <li>Engage in fraudulent orders, chargebacks, or payment disputes without legitimate grounds</li>
+          <li>Harass, threaten, or abuse chefs, couriers, or other users</li>
+          <li>Circumvent safety, verification, or review systems</li>
+        </ul>
+
+        <h3>7. Intellectual Property</h3>
+        <p>All content on the Duemo platform — including the Duemo name, logomark, design, text, and software — is the property of "DUEMO" MMC and may not be reproduced, distributed, or used without written permission.</p>
+
+        <h3>8. Limitation of Liability</h3>
+        <p>Duemo acts as an intermediary marketplace. We are not responsible for the quality, safety, or legality of food prepared by independent chefs beyond our vetting and compliance requirements. Our total liability for any claim shall not exceed the value of the relevant order.</p>
+
+        <h3>9. Account Deletion</h3>
+        <p>You may delete your account at any time via the app (Profile → Settings → Delete Account) or by emailing <a href="mailto:privacy@duemo.az">privacy@duemo.az</a>. See the <a href="#delete-account">Account Deletion</a> section below for details on data handling.</p>
+
+        <h3>10. Modifications</h3>
+        <p>We may update these Terms at any time. We will notify you of material changes via in-app notification or email. Continued use of Duemo after notification constitutes acceptance of the updated Terms.</p>
+
+        <h3>11. Governing Law &amp; Disputes</h3>
+        <p>These Terms are governed by the laws of the Republic of Azerbaijan. Any disputes shall be submitted first to good-faith negotiation, and if unresolved, to the competent courts of Baku, Azerbaijan.</p>
+      </div>
+
+      <div data-lang="az">
+        <p>Bu İstifadəçi Şərtləri <strong>"DUEMO" MMC</strong> tərəfindən idarə olunan Duemo tətbiqindən istifadənizi tənzimləyir.</p>
+        <h3>1. Duemo Haqqında</h3>
+        <p>Duemo Bakı şəhərində ev yemək çatdırılması üçün ev aşpazları, kuryerlər və müştəriləri birləşdirən marketplace platformudur.</p>
+        <h3>2. Sifarişlər və Ödəniş</h3>
+        <div class="hl"><p>📋 Ödəniş səhifəsindəki "Ödəniş şərtlərini oxudum və qəbul edirəm" qutusunu işarələməlisiniz.</p></div>
+        <h3>3. Ləğvetmə və Geri Ödəmə</h3>
+        <p>Sifarişlər aşpaz hazırlamağa başlamazdan əvvəl 5 dəqiqə ərzində ləğv edilə bilər. Keyfiyyət problemləri üçün çatdırılmadan sonra 2 saat ərzində <a href="mailto:hello@duemo.ai">hello@duemo.ai</a> ünvanına müraciət edin.</p>
+        <h3>4. Tətbiq edilən Qanun</h3>
+        <p>Bu Şərtlər Azərbaycan Respublikasının qanunlarına tabedir. Mübahisələr Bakı məhkəmələrində həll edilir.</p>
+        <div class="co-box">
+          <div class="co-row"><span class="co-k">Şirkət</span><span class="co-v">"DUEMO" MMC · VÖEN: 1407425651</span></div>
+          <div class="co-row"><span class="co-k">Email</span><span class="co-v"><a href="mailto:hello@duemo.ai">hello@duemo.ai</a></span></div>
+        </div>
+      </div>
+
+      <div data-lang="ru">
+        <p>Настоящие Условия использования регулируют использование приложений Duemo, управляемых <strong>"DUEMO" ООО</strong>.</p>
+        <h3>1. О Duemo</h3>
+        <p>Duemo — маркетплейс для доставки домашней еды в Баку, Азербайджан.</p>
+        <h3>2. Заказы и оплата</h3>
+        <div class="hl"><p>📋 На странице оплаты установите флажок "Я принимаю условия оплаты" перед оформлением заказа.</p></div>
+        <h3>3. Отмена и возврат</h3>
+        <p>Отмена возможна в течение 5 минут до начала приготовления. По вопросам качества обращайтесь в течение 2 часов: <a href="mailto:hello@duemo.ai">hello@duemo.ai</a>.</p>
+        <h3>4. Применимое право</h3>
+        <p>Условия регулируются законодательством Азербайджанской Республики. Споры — в судах Баку.</p>
+        <div class="co-box">
+          <div class="co-row"><span class="co-k">Компания</span><span class="co-v">"DUEMO" ООО · ИНН: 1407425651</span></div>
+          <div class="co-row"><span class="co-k">Email</span><span class="co-v"><a href="mailto:hello@duemo.ai">hello@duemo.ai</a></span></div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /terms -->
+
+  <!-- ═══ DELETE ACCOUNT ═══ -->
+  <div class="sec" id="delete-account">
+    <div class="sec-hd">
+      <div class="sec-icon">🗑️</div>
+      <div>
+        <p class="sec-num">Section 3</p>
+        <h2>Delete Your Account</h2>
+        <p class="sec-sub">How to delete your account and what happens to your data · All three Duemo apps</p>
+      </div>
+    </div>
+    <div class="sb">
+
+      <div data-lang="en" class="on">
+
+        <h3>How to Delete In-App</h3>
+        <div class="steps">
+          <div class="step"><div class="sn">1</div><div class="st">Open Profile</div><div class="sd">Tap your profile icon in the bottom navigation bar</div></div>
+          <div class="step"><div class="sn">2</div><div class="st">Go to Settings</div><div class="sd">Tap the Settings (⚙️) icon in the top right corner</div></div>
+          <div class="step"><div class="sn">3</div><div class="st">Account</div><div class="sd">Scroll to the "Account" section</div></div>
+          <div class="step"><div class="sn">4</div><div class="st">Delete Account</div><div class="sd">Tap "Delete Account" — this will open the confirmation screen</div></div>
+          <div class="step"><div class="sn">5</div><div class="st">Confirm</div><div class="sd">Enter your password and tap "Confirm Deletion" to permanently delete your account</div></div>
+        </div>
+
+        <h3>Delete via Email</h3>
+        <div class="del-cta">
+          <div class="del-cta-text">
+            <h4>Can't access the app?</h4>
+            <p>Send an email request and we'll delete your account within 30 days</p>
+          </div>
+          <a class="del-btn" href="mailto:privacy@duemo.az?subject=Account%20Deletion%20Request&body=Hello%20Duemo%20Team%2C%0A%0AI%20would%20like%20to%20request%20the%20permanent%20deletion%20of%20my%20Duemo%20account.%0A%0ARegistered%20email%3A%20%5Byour%20email%5D%0APhone%20number%3A%20%5Byour%20phone%5D%0A%0APlease%20confirm%20once%20the%20deletion%20is%20complete.%0A%0AThank%20you.">📧 Request via Email</a>
+        </div>
+
+        <h3>What Gets Deleted (within 30 days)</h3>
+        <ul>
+          <li>Your account profile (name, email, phone number, photo)</li>
+          <li>Saved delivery addresses</li>
+          <li>Order history and saved items</li>
+          <li>In-app messages and chat history</li>
+          <li>Reviews and ratings you submitted</li>
+          <li>Notification preferences and device tokens</li>
+          <li><strong>Chef accounts:</strong> menu listings, food photos, kitchen details</li>
+          <li><strong>Courier accounts:</strong> delivery records, vehicle information</li>
+        </ul>
+
+        <h3>What Is Retained (and why)</h3>
+        <div class="tw"><table>
+          <tr><th>Data</th><th>Retention</th><th>Legal Basis</th></tr>
+          <tr><td>Financial transaction records</td><td>7 years</td><td>Azerbaijan Tax Code, Article 72 (mandatory)</td></tr>
+          <tr><td>Food safety compliance records (chefs)</td><td>5 years</td><td>AFSA regulatory requirement</td></tr>
+          <tr><td>Anonymized usage statistics</td><td>3 years</td><td>Platform improvement — not linked to your identity</td></tr>
+          <tr><td>Fraud prevention records</td><td>2 years</td><td>Security &amp; legal obligation</td></tr>
+        </table></div>
+
+        <h3>Timeline</h3>
+        <div class="steps">
+          <div class="step"><div class="sn">✓</div><div class="st">Day 1–3</div><div class="sd">Confirmation email sent · Account deactivated immediately</div></div>
+          <div class="step"><div class="sn">✓</div><div class="st">Day 4–30</div><div class="sd">Personal data progressively deleted from all Duemo systems</div></div>
+          <div class="step"><div class="sn">✓</div><div class="st">Day 30</div><div class="sd">Deletion complete · Final confirmation email sent</div></div>
+        </div>
+
+        <div class="hl"><p>⚠️ <strong>Account deletion is permanent and irreversible.</strong> Once confirmed, your data cannot be recovered. If you have a pending order, please allow it to complete before requesting deletion. Outstanding refunds will still be processed to your original payment method.</p></div>
+      </div>
+
+      <div data-lang="az">
+        <h3>Tətbiq vasitəsilə silinmə</h3>
+        <div class="steps">
+          <div class="step"><div class="sn">1</div><div class="st">Profil</div><div class="sd">Profil ikonuna toxunun</div></div>
+          <div class="step"><div class="sn">2</div><div class="st">Ayarlar</div><div class="sd">Parametrlər bölməsinə keçin</div></div>
+          <div class="step"><div class="sn">3</div><div class="st">Hesab</div><div class="sd">"Hesab" bölməsinə gedin</div></div>
+          <div class="step"><div class="sn">4</div><div class="st">Sil</div><div class="sd">"Hesabı sil" düyməsinə basın</div></div>
+          <div class="step"><div class="sn">5</div><div class="st">Təsdiq</div><div class="sd">Şifrənizi daxil edib təsdiqlən</div></div>
+        </div>
+        <div class="del-cta">
+          <div class="del-cta-text"><h4>Email ilə silinmə sorğusu</h4><p>30 gün ərzində hesabınız silinəcək</p></div>
+          <a class="del-btn" href="mailto:privacy@duemo.az?subject=Hesab%20Silinmə%20Sorğusu">📧 Email göndər</a>
+        </div>
+        <div class="hl"><p>⚠️ <strong>Hesab silinməsi geri qaytarılmazdır.</strong> Maliyyə qeydləri Vergi Məcəlləsinin 72-ci maddəsinə əsasən 7 il saxlanılır.</p></div>
+      </div>
+
+      <div data-lang="ru">
+        <h3>Удаление через приложение</h3>
+        <div class="steps">
+          <div class="step"><div class="sn">1</div><div class="st">Профиль</div><div class="sd">Нажмите иконку профиля</div></div>
+          <div class="step"><div class="sn">2</div><div class="st">Настройки</div><div class="sd">Перейдите в Настройки</div></div>
+          <div class="step"><div class="sn">3</div><div class="st">Аккаунт</div><div class="sd">Откройте раздел "Аккаунт"</div></div>
+          <div class="step"><div class="sn">4</div><div class="st">Удалить</div><div class="sd">Нажмите "Удалить аккаунт"</div></div>
+          <div class="step"><div class="sn">5</div><div class="st">Подтверждение</div><div class="sd">Введите пароль и подтвердите</div></div>
+        </div>
+        <div class="del-cta">
+          <div class="del-cta-text"><h4>Удаление по email</h4><p>Обработка в течение 30 дней</p></div>
+          <a class="del-btn" href="mailto:privacy@duemo.az?subject=Запрос%20на%20удаление%20аккаунта">📧 Отправить запрос</a>
+        </div>
+        <div class="hl"><p>⚠️ <strong>Удаление аккаунта необратимо.</strong> Финансовые записи хранятся 7 лет согласно ст. 72 Налогового кодекса Азербайджана.</p></div>
+      </div>
+
+    </div>
+  </div><!-- /delete-account -->
+
+  <!-- ═══ DATA SAFETY ═══ -->
+  <div class="sec" id="data-safety">
+    <div class="sec-hd">
+      <div class="sec-icon">🛡️</div>
+      <div>
+        <p class="sec-num">Section 4</p>
+        <h2>Data Safety &amp; Transparency</h2>
+        <p class="sec-sub">A full declaration of data practices for Google Play Data Safety and Apple App Store Privacy Labels</p>
+      </div>
+    </div>
+    <div class="sb">
+      <div data-lang="en" class="on">
+
+        <p>This section mirrors the declarations we have submitted to Google Play Store and Apple App Store. It applies to all three Duemo apps: <span class="at at-c">Customer</span> <span class="at at-ch">Chef</span> <span class="at at-cr">Courier</span></p>
+
+        <h3>Data Collected &amp; Purposes</h3>
+        <div class="tw"><table>
+          <tr><th>Data Type</th><th>Applies to</th><th>Collected</th><th>Shared</th><th>Required</th><th>User Deletable</th></tr>
+          <tr>
+            <td>Name</td>
+            <td><span class="at at-c">C</span><span class="at at-ch">Ch</span><span class="at at-cr">Co</span></td>
+            <td class="y">Yes</td><td class="n">No</td><td class="y">Yes</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Email address</td>
+            <td><span class="at at-c">C</span><span class="at at-ch">Ch</span><span class="at at-cr">Co</span></td>
+            <td class="y">Yes</td><td class="n">No</td><td class="y">Yes</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Phone number</td>
+            <td><span class="at at-c">C</span><span class="at at-ch">Ch</span><span class="at at-cr">Co</span></td>
+            <td class="y">Yes</td><td class="n">No</td><td class="y">Yes</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Delivery address</td>
+            <td><span class="at at-c">C</span></td>
+            <td class="y">Yes</td><td class="c">Couriers only</td><td class="n">No (for orders)</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Precise GPS location</td>
+            <td><span class="at at-cr">Co</span></td>
+            <td class="y">Yes — while on active delivery</td><td class="c">Customer (ETA only)</td><td class="y">Yes (active deliveries)</td><td class="y">Yes (stop = disable GPS)</td>
+          </tr>
+          <tr>
+            <td>Approximate location</td>
+            <td><span class="at at-c">C</span></td>
+            <td class="c">Optional</td><td class="n">No</td><td class="n">No</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Payment info (last 4 digits only)</td>
+            <td><span class="at at-c">C</span></td>
+            <td class="y">Yes</td><td class="c">Payment processor only</td><td class="n">No (for orders)</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Bank account for payouts</td>
+            <td><span class="at at-ch">Ch</span><span class="at at-cr">Co</span></td>
+            <td class="y">Yes</td><td class="c">Payout processor only</td><td class="y">Yes (for payouts)</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Government ID / photo ID</td>
+            <td><span class="at at-ch">Ch</span><span class="at at-cr">Co</span></td>
+            <td class="y">Yes (for verification)</td><td class="c">ID verification provider only</td><td class="y">Yes (for onboarding)</td><td class="c">Upon account deletion</td>
+          </tr>
+          <tr>
+            <td>Food photos &amp; menu items</td>
+            <td><span class="at at-ch">Ch</span></td>
+            <td class="y">Yes</td><td class="y">Yes (public)</td><td class="n">No</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Order history</td>
+            <td><span class="at at-c">C</span><span class="at at-ch">Ch</span><span class="at at-cr">Co</span></td>
+            <td class="y">Yes</td><td class="n">No</td><td class="n">No</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Device identifiers (push tokens)</td>
+            <td><span class="at at-c">C</span><span class="at at-ch">Ch</span><span class="at at-cr">Co</span></td>
+            <td class="y">Yes</td><td class="n">No</td><td class="n">No</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>Ratings &amp; reviews</td>
+            <td><span class="at at-c">C</span><span class="at at-ch">Ch</span><span class="at at-cr">Co</span></td>
+            <td class="y">Yes</td><td class="c">Shown to relevant party</td><td class="n">No</td><td class="y">Yes</td>
+          </tr>
+          <tr>
+            <td>In-app messages / support chat</td>
+            <td><span class="at at-c">C</span><span class="at at-ch">Ch</span><span class="at at-cr">Co</span></td>
+            <td class="y">Yes</td><td class="n">No (except legal obligation)</td><td class="n">No</td><td class="y">Yes</td>
+          </tr>
+        </table></div>
+
+        <p style="font-size:12px;color:var(--muted);margin-top:6px"><span class="at at-c">C</span> = Customer app &nbsp;|&nbsp; <span class="at at-ch">Ch</span> = Chef app &nbsp;|&nbsp; <span class="at at-cr">Co</span> = Courier app</p>
+
+        <h3>Security Practices</h3>
+        <ul>
+          <li>All data transmitted over encrypted HTTPS/TLS connections</li>
+          <li>Full card numbers are never stored on Duemo servers</li>
+          <li>Access to personal data is restricted to authorised personnel only</li>
+          <li>Regular security assessments and penetration testing</li>
+          <li>Data deletion requests are processed within 30 days (see <a href="#delete-account">Account Deletion</a>)</li>
+        </ul>
+
+        <h3>Data Sharing Summary</h3>
+        <ul>
+          <li>Duemo does <strong>not</strong> share data with advertising networks</li>
+          <li>Duemo does <strong>not</strong> use data for cross-app tracking</li>
+          <li>Duemo does <strong>not</strong> sell personal data to third parties</li>
+          <li>Third-party processors used: payment processor, payout processor, ID verification provider, push notification service (Firebase)</li>
+        </ul>
+
+        <h3>Location Data (Courier App)</h3>
+        <div class="hl"><p>📍 The Courier app collects <strong>precise, real-time GPS location</strong> while a courier has an active delivery in progress. This is required to coordinate delivery logistics and display estimated arrival time to customers. Location collection stops immediately when no delivery is active. This data is not used for advertising or sold to third parties.</p></div>
+      </div>
+
+      <div data-lang="az">
+        <p>Bu bölmə Google Play Data Safety forması və Apple App Store Məxfilik Etiketi üçün məlumat elanlarımızı əks etdirir.</p>
+        <h3>Əsas Məqamlar</h3>
+        <ul>
+          <li>Şəxsi məlumatlar reklamlara satılmır</li>
+          <li>Kuryer tətbiqi aktiv çatdırılma zamanı GPS məkanını toplayır</li>
+          <li>Tam kart nömrələri saxlanılmır</li>
+          <li>Bütün məlumatlar HTTPS vasitəsilə şifrələnir</li>
+        </ul>
+      </div>
+
+      <div data-lang="ru">
+        <p>Этот раздел отражает декларации данных, поданные нами в Google Play и App Store.</p>
+        <h3>Ключевые моменты</h3>
+        <ul>
+          <li>Персональные данные не продаются рекламодателям</li>
+          <li>Приложение Курьер собирает GPS-данные только во время активной доставки</li>
+          <li>Полные номера карт не хранятся на серверах Duemo</li>
+          <li>Все данные передаются через зашифрованное HTTPS-соединение</li>
+        </ul>
+      </div>
+
+    </div>
+  </div><!-- /data-safety -->
+
+  <!-- ═══ SUPPORT ═══ -->
+  <div class="sec" id="support">
+    <div class="sec-hd">
+      <div class="sec-icon">💬</div>
+      <div>
+        <p class="sec-num">Section 5</p>
+        <h2>Support &amp; Contact</h2>
+        <p class="sec-sub">Get help with orders, your account, privacy, or anything else</p>
+      </div>
+    </div>
+    <div class="sb">
+
+      <div data-lang="en" class="on">
+        <div class="cc-grid">
+          <div class="cc">
+            <div class="cc-icon">💬</div>
+            <div class="cc-lbl">General Support</div>
+            <div class="cc-val"><a href="mailto:hello@duemo.ai">hello@duemo.ai</a></div>
+            <div class="cc-sub">Orders, accounts, general questions</div>
+          </div>
+          <div class="cc">
+            <div class="cc-icon">🔒</div>
+            <div class="cc-lbl">Privacy &amp; Data</div>
+            <div class="cc-val"><a href="mailto:privacy@duemo.az">privacy@duemo.az</a></div>
+            <div class="cc-sub">Data requests, deletion, GDPR rights</div>
+          </div>
+          <div class="cc">
+            <div class="cc-icon">📞</div>
+            <div class="cc-lbl">Phone</div>
+            <div class="cc-val"><a href="tel:+994124938277">+994 (12) 493-82-77</a></div>
+            <div class="cc-sub">Mon–Fri · 09:00–18:00 AZT</div>
+          </div>
+          <div class="cc">
+            <div class="cc-icon">🍳</div>
+            <div class="cc-lbl">Become a Chef</div>
+            <div class="cc-val"><a href="mailto:chefs@duemo.ai">chefs@duemo.ai</a></div>
+            <div class="cc-sub">Apply to cook on Duemo</div>
+          </div>
+          <div class="cc">
+            <div class="cc-icon">🛵</div>
+            <div class="cc-lbl">Become a Courier</div>
+            <div class="cc-val"><a href="mailto:couriers@duemo.ai">couriers@duemo.ai</a></div>
+            <div class="cc-sub">Join the delivery team</div>
+          </div>
+          <div class="cc">
+            <div class="cc-icon">📍</div>
+            <div class="cc-lbl">Headquarters</div>
+            <div class="cc-val">Baku, Azerbaijan</div>
+            <div class="cc-sub">AZ1014, Nasimi District, Bulbul Ave 30/5</div>
+          </div>
+        </div>
+
+        <h3>Frequently Asked Questions</h3>
+        <p><strong>How do I cancel an order?</strong><br>Orders can be cancelled within 5 minutes of placement, before the chef begins preparation. Go to Profile → Orders → [Your Order] → Cancel Order.</p>
+        <p><strong>How do I report a quality issue?</strong><br>Contact us at <a href="mailto:hello@duemo.ai">hello@duemo.ai</a> within 2 hours of receiving your delivery. Include your order number and a description of the issue. Photos are helpful.</p>
+        <p><strong>How do I delete my account?</strong><br>Go to Profile → Settings → Account → Delete Account. Or email <a href="mailto:privacy@duemo.az">privacy@duemo.az</a>. Full details in the <a href="#delete-account">Account Deletion</a> section above.</p>
+        <p><strong>I have a food allergy. What should I do?</strong><br>Contact the chef directly through the app's in-app messaging before placing your order. Duemo chefs are required to disclose allergen information upon request.</p>
+        <p><strong>How do I request a copy of my personal data?</strong><br>Email <a href="mailto:privacy@duemo.az">privacy@duemo.az</a> with the subject "Data Access Request." We will respond within 30 days.</p>
+        <p><strong>How do I apply to cook or deliver for Duemo?</strong><br>Email <a href="mailto:chefs@duemo.ai">chefs@duemo.ai</a> (for chefs) or <a href="mailto:couriers@duemo.ai">couriers@duemo.ai</a> (for couriers). Our team will guide you through the onboarding and AFSA compliance process.</p>
+      </div>
+
+      <div data-lang="az">
+        <div class="cc-grid">
+          <div class="cc"><div class="cc-icon">💬</div><div class="cc-lbl">Ümumi Dəstək</div><div class="cc-val"><a href="mailto:hello@duemo.ai">hello@duemo.ai</a></div></div>
+          <div class="cc"><div class="cc-icon">🔒</div><div class="cc-lbl">Məxfilik</div><div class="cc-val"><a href="mailto:privacy@duemo.az">privacy@duemo.az</a></div></div>
+          <div class="cc"><div class="cc-icon">📞</div><div class="cc-lbl">Telefon</div><div class="cc-val"><a href="tel:+994124938277">+994 (12) 493-82-77</a></div><div class="cc-sub">B.ertəsi–Cümə · 09:00–18:00</div></div>
+        </div>
+        <div class="co-box">
+          <h4>Şirkət Məlumatları</h4>
+          <div class="co-row"><span class="co-k">Ad</span><span class="co-v">"DUEMO" Məhdud Məsuliyyətli Cəmiyyəti</span></div>
+          <div class="co-row"><span class="co-k">VÖEN</span><span class="co-v">1407425651</span></div>
+          <div class="co-row"><span class="co-k">Ünvan</span><span class="co-v">AZ1014, Bakı, Nəsimi rayonu, Bülbül pr., ev 30, mənzil 5</span></div>
+          <div class="co-row"><span class="co-k">Qeydiyyat tarixi</span><span class="co-v">21.10.2025</span></div>
+          <div class="co-row"><span class="co-k">Hüquqi forma</span><span class="co-v">Məhdud Məsuliyyətli Cəmiyyət (MMC)</span></div>
+        </div>
+      </div>
+
+      <div data-lang="ru">
+        <div class="cc-grid">
+          <div class="cc"><div class="cc-icon">💬</div><div class="cc-lbl">Поддержка</div><div class="cc-val"><a href="mailto:hello@duemo.ai">hello@duemo.ai</a></div></div>
+          <div class="cc"><div class="cc-icon">🔒</div><div class="cc-lbl">Конфиденциальность</div><div class="cc-val"><a href="mailto:privacy@duemo.az">privacy@duemo.az</a></div></div>
+          <div class="cc"><div class="cc-icon">📞</div><div class="cc-lbl">Телефон</div><div class="cc-val"><a href="tel:+994124938277">+994 (12) 493-82-77</a></div><div class="cc-sub">Пн–Пт · 09:00–18:00</div></div>
+        </div>
+        <div class="co-box">
+          <h4>Реквизиты компании</h4>
+          <div class="co-row"><span class="co-k">Компания</span><span class="co-v">"DUEMO" ООО</span></div>
+          <div class="co-row"><span class="co-k">ИНН (VÖEN)</span><span class="co-v">1407425651</span></div>
+          <div class="co-row"><span class="co-k">Адрес</span><span class="co-v">AZ1014, Баку, Насиминский р-н, пр. Бюльбюль 30/5, Азербайджан</span></div>
+          <div class="co-row"><span class="co-k">Дата регистрации</span><span class="co-v">21.10.2025</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /support -->
+
+</div><!-- /pw -->
+
+<!-- ─────────── FOOTER ─────────── -->
+<footer>
+  <a href="/" class="ft-logo">
+    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="9.5" cy="9" rx="8" ry="9" fill="#FFEADD"/>
+      <path d="M5 18C3.5 27 7 42 21 46H34C43 45 47 37 47 28C47 15 39 7 27 7C17 7 6.5 11 5 18Z" fill="#FFEADD"/>
+      <rect x="4" y="12" width="18" height="14" fill="#FFEADD"/>
+      <path d="M19 16L19 38C36 37 41 30 41 27C41 21 35 16 19 16Z" fill="#773000"/>
+      <circle cx="10" cy="47" r="3.8" fill="none" stroke="#FFEADD" stroke-width="3"/>
+    </svg>
+    Duemo
+  </a>
+  <div class="ft-links">
+    <a href="/">Home</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Service</a>
+    <a href="#delete-account">Delete Account</a>
+    <a href="#data-safety">Data Safety</a>
+    <a href="#support">Support</a>
+  </div>
+  <p class="ft-copy">© 2026 "DUEMO" MMC · VÖEN: 1407425651</p>
+</footer>
+
+<script>
+/* ── Language Switcher ── */
+let lang='en';
+function setLang(l){
+  lang=l;
+  document.querySelectorAll('[data-lang]').forEach(el=>el.classList.toggle('on',el.dataset.lang===l));
+  document.querySelectorAll('.lang-btn').forEach((b,i)=>{
+    const ls=['en','az','ru'];
+    b.classList.toggle('on',ls[i]===l);
+  });
+  document.documentElement.lang=l;
+  try{localStorage.setItem('dl',l)}catch(e){}
+}
+try{const s=localStorage.getItem('dl');if(s&&['en','az','ru'].includes(s))setLang(s)}catch(e){}
+
+/* ── TOC Active State ── */
+const tocLinks=document.querySelectorAll('.tl');
+const sections=document.querySelectorAll('.sec[id]');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      tocLinks.forEach(l=>{
+        l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id);
+      });
+    }
+  });
+},{rootMargin:'-15% 0px -75% 0px'});
+sections.forEach(s=>obs.observe(s));
+
+/* ── Copy URL Buttons ── */
+function copyUrl(url,btn){
+  navigator.clipboard.writeText(url).then(()=>{
+    const orig=btn.textContent;
+    btn.textContent='Copied ✓';
+    btn.classList.add('ok');
+    setTimeout(()=>{btn.textContent=orig;btn.classList.remove('ok')},2000);
+  }).catch(()=>{
+    prompt('Copy this URL:',url);
+  });
+}
+</script>
+</body>
+</html>
